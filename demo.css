@@ -1,0 +1,797 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@font-face {
+  font-family: SourceHanSansTW-Medium;
+  src: url('../fonts/SourceHanSansTW-Medium.otf');
+}
+
+@font-face {
+  font-family: SourceHanSansTW-Regular;
+  src: url('../fonts/SourceHanSansTW-Regular.otf');
+}
+
+@font-face {
+  font-family: SourceHanSansTW-Light;
+  src: url('../fonts/SourceHanSansTW-Light.otf');
+}
+
+@font-face {
+  font-family: custom-sans-serif;
+  src: local('Microsoft YaHei'), local('微軟正黑體');
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: custom-sans-serif;
+  src: local(Helvetica), local(Segoe UI);
+  unicode-range: U+00-024F;
+}
+
+html,
+body,
+header,
+nav,
+section,
+footer,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+form {
+  color: #454545;
+  font-family: 'SourceHanSansTW-Medium', custom-sans-serif;
+  font-size: 18px;
+  height: 100%;
+}
+
+nav,
+header,
+section,
+footer {
+  display: block;
+  float: left;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* Change focusing input background color in Google Chrome */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px floralwhite inset;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #363636;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   All custom styles
+   ========================================================================== */
+
+/* Avoid exceeding the boundaries */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+/*  list  */
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*  link  */
+
+a {
+  color: #454545;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+input {
+  background-color: floralwhite;
+  /*border: 1px solid darkgray;*/
+  border-width: 0 0 0 0;
+  border-bottom: 2px solid darkgray;
+  /*border-radius: 5px;*/
+  color: #363636;
+  display: inline;
+  font-family: 'SourceHanSansTW-Regular', custom-sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  padding: 5px;
+}
+
+input:focus {
+  border-bottom: 2px solid #454545;
+  outline: none;
+  transition: 0.2s;
+  /*box-shadow: 0 0 4px dodgerblue;*/
+}
+
+/*  Jquery.validate label style  */
+label.error {
+  color: #bd0000;
+  font-family: 'SourceHanSansTW-Medium', custom-sans-serif;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+  color: darkgreen;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 3px;
+  padding: 2px 20px 4px 20px;
+  transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: darkgreen;
+  color: #F5F5F5;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+/* ==========================================================================
+   Font Awesome custom styles
+   ========================================================================== */
+
+.fa {
+
+}
+
+.fa-input{
+  margin-right: 5px;
+}
+
+.fa-spinner {
+  color: rgb(124, 209, 249);
+}
+
+/* ==========================================================================
+   User styles
+   ========================================================================== */
+
+.container-navbar {
+  height: 66px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+.navbar-main {
+  background: rgb(245, 245, 245);
+  color: darkgreen;
+  height: 100%;
+  letter-spacing: 1px;
+  /*min-width: 30vmax;*/
+  position: relative;
+  /*top: 0;*/
+  width: 100%;
+}
+
+.nav-act-region {
+  float: left;
+  left: 10%;
+  height: 100%;
+  position: absolute;
+  width: 80%;
+}
+
+.nav-brand {
+  color: darkslateblue;
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+.nav-brand:hover {
+  color: chocolate;
+}
+
+.nav-menu {
+  float: left;
+  font-size: 17px;
+  height: 100%;
+  letter-spacing: 1px;
+  margin-left: 60px;
+  /*margin-top: 18px;*/
+  width: 35%;
+}
+
+.nav-item {
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  width: 60px;
+
+  /*  Let icon located on center  */
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.nav-login {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 60px;
+
+  /*  Let icon located on center  */
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.nav-menu-btn:hover {
+  background-color: #454545;
+  color: lemonchiffon;
+}
+
+.nav-login-btn:hover {
+  color: forestgreen;
+}
+
+
+.nav-fa-link,
+.nav-fa-login {
+  margin-top: 25%;
+}
+
+.nav-input {
+  width: 200px;
+}
+
+
+/* ==========================================================================
+   Main body register / login form style
+   ========================================================================== */
+
+.container-form {
+  margin: 10vh auto 5vh auto;
+  padding: 0 15px 40px 15px;
+}
+
+.container-form-col {
+  margin: 10vh auto 5vh auto;
+  padding: 0 15px 40px 15px;
+  width: 80%;
+  max-width: 650px;
+  min-height: 350px;
+}
+
+.left-sec,
+.right-sec {
+  flex-direction: column;
+  height: 100%;
+}
+.left-sec {
+  padding: 6px 2rem 2rem 0;
+  width: 40%;
+}
+.right-sec {
+  width: 60%;
+}
+.btn-form-login {
+  float: right;
+  font-size: 18px;
+  height: 2.5rem;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.hint-login-page {
+  display: inline-block;
+  font-size: 16px;
+  height: 100%;
+  padding: 5px;
+}
+.link-custom {
+  text-decoration: underline;
+}
+.link-custom:hover {
+  color: forestgreen;
+}
+
+.btn-api-fb,
+.btn-api-google {
+  background-color: transparent;
+  border: 1px solid #9b9b9b;
+  border-radius: 5px;
+  color: #9b9b9b;
+  cursor: not-allowed;
+  font-size: 16px;
+  height: 3rem;
+  margin-bottom: 10px;
+  padding: 4px 10px 4px 10px;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.page-header {
+  color: #363636;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+label {
+  color: #454545;
+  cursor: default;
+  display: inline-block;
+  font-size: 17px;
+  max-width: 100%;
+  /*margin-bottom: 5px;*/
+  font-weight: bold;
+}
+
+.form-col {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.form-input {
+  display: block;
+  line-height: 1.6;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+.btn-form-register {
+  float: right;
+  height: 40px;
+}
+
+/*  Alert window style  */
+.swal-title {
+  font-size: 28px;
+}
+.swal-text {
+  font-size: 18px;
+}
+.swal-button {
+  font-size: 16px;
+}
+/*.swal-text {*/
+  /*font-family: 'SourceHanSansTW-Regular', '微軟正黑體', 'Segoe UI', sans-serif;*/
+/*}*/
+
+
+/* ==========================================================================
+   Tooltip style
+   ========================================================================== */
+.tip {
+  position: relative;
+}
+
+.tip:hover::after {
+  background: #454545;
+  border-radius: 5px;
+  color: lightgoldenrodyellow;
+  content: attr(aria-label);
+  font-size: 16px;
+  height: auto;
+  margin-top: 5px;
+  min-height: 20px;
+  padding: 5px;
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  transform: translateX(50%);
+  z-index: 10000;
+  white-space: pre;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/*  Height responsive  */
+@media only screen and (max-height: 680px) {
+  .container-navbar {
+    height: 50px;
+  }
+  .container-form,
+  .container-form-col {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    /*padding: 0 15px 40px 15px;*/
+  }
+  .right-sec {
+    margin-bottom: 20px;
+  }
+  .nav-menu,
+  .nav-login {
+    /*margin-top: 10px;*/
+  }
+}
+
+@media only screen and (min-height: 681px) and (max-height: 960px) {
+  .container-navbar {
+    height: 66px;
+  }
+}
+
+@media only screen and (min-height: 961px) {
+  .container-navbar {
+    height: 70px;
+  }
+}
+
+/*  For 13" laptop  */
+@media only screen and (max-height: 680px) and (min-width: 760px) {
+  .container-navbar {
+    height: 60px;
+  }
+  .container-form,
+  .container-form-col {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  .nav-fa-link,
+  .nav-fa-login {
+    margin-top: 23%;
+  }
+}
+
+/*  Responsive form width for mobile  */
+@media only screen and (min-width: 680px) {
+  .container-form {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  /* Style adjustments for viewports that meet the condition */
+  .nav-act-region {
+    left: 5%;
+    width: 90%;
+  }
+  .nav-login {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-login .btn {
+    padding: 4px 25px 4px 25px;
+  }
+  .nav-login input {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .nav-menu {
+    margin-left: 40px;
+    /*display: none;*/
+  }
+  .nav-item,
+  .nav-login {
+    width: 52px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .nav-brand {
+    font-size: 22px;
+  }
+  .nav-menu {
+    margin-left: 20px;
+  }
+  .nav-login .btn {
+    padding: 1px 12px 1px 12px;
+  }
+  i.nav-fa-link,
+  i.nav-fa-login {
+    font-size: 28px;
+  }
+  .tip:hover::after {
+    font-size: 14px;
+  }
+  .nav-item,
+  .nav-login {
+    margin-left: 0;
+    width: 42px;
+  }
+  .container-form-col {
+    flex-direction: column;
+    min-height: auto;
+    -webkit-box-orient: vertical;
+    width: 100%;
+  }
+  .left-sec,
+  .right-sec {
+    padding: 10px;
+    width: 100%;
+  }
+  .btn-form-login {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+/*@media only screen and (max-height: 760px) {*/
+  /*.container-navbar {*/
+    /*height: 7vh;*/
+  /*}*/
+/*}*/
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

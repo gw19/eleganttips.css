@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Elegant Tip CSS main file
+   ========================================================================== */
+:root {
+  --iron-black: #454545;
+
+  --yellow: #fff2a5;
+  --goldenrod-yellow: #FAFAD2; /* lightgoldenrodyellow */
+
+  --red: #e62b27;
+  --light-red: #E64945;
+  --dark-red: #bd0000;
+
+  --blue: #145b9b;
+  --light-blue: #367abd;
+  --dark-blue: #234990;
+
+  --orange: #F0A32F;
+  --dark-orange: #EB7B2D;
+
+  --max-width: 250px;
+  --arrow-size: 8px;
+}
+* {
+  box-sizing: border-box;
+}
+.et {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.et .et-block {
+  visibility: hidden;
+  border-radius: 5px;
+  cursor: default;
+  font-size: 16px;
+  font-weight: 300;
+  height: auto;
+  min-height: 20px;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  white-space: pre;
+  z-index: 10000;
+}
+.et:hover .et-block,
+.et:focus .et-block {
+  visibility: visible;
+}
+
+/* ==========================================================================
+   Color
+   ========================================================================== */
+
+/*  Default background-color  */
+span:not([data-bgcolor]),
+span[data-bgcolor=''],
+span[data-bgcolor=' '] {
+  background-color: var(--iron-black);
+}
+/*  Default color  */
+span:not([data-color]),
+span[data-color=''],
+span[data-color=' '] {
+  color: var(--yellow);
+}
+
+/*  Defined background-color  */
+span[data-bgcolor='red'] {
+  background-color: var(--red);
+}
+
+/* ==========================================================================
+   Location
+   ========================================================================== */
+
+.et .et-block.et-bottom {
+  content: '';
+  margin-top: 10px;
+  right: 50%;
+  top: 100%;
+  transform: translateX(50%);
+}
+.et .et-block.et-top {
+  content: '';
+  margin-top: 0;
+  margin-bottom: 10px;
+  right: 50%;
+  bottom: 100%;
+  transform: translateX(50%);
+}
+.et .et-block.et-left {
+  content: '';
+  margin-top: 0;
+  margin-right: 10px;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.et .et-block.et-right {
+  content: '';
+  margin-top: 0;
+  margin-left: 10px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*.et-arrow::after {*/
+  /*content: '';*/
+  /*position: absolute;*/
+  /*top: 100%;*/
+  /*left: 50%;*/
+  /*margin-left: -5px;*/
+  /*border: 5px solid transparent;*/
+/*}*/
+
+
+.et-bottom.et-arrow::after {
+  border: var(--arrow-size) solid transparent;
+  border-bottom-color: var(--iron-black);
+  content: '';
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: var(--arrow-size);
+}
+.et-top.et-arrow::after {
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--iron-black);
+  content: '';
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: var(--arrow-size);
+}
+.et-left.et-arrow::after {
+  border: var(--arrow-size) solid transparent;
+  border-left-color: var(--iron-black);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: var(--arrow-size);
+}
+.et-right.et-arrow::after {
+  border: var(--arrow-size) solid transparent;
+  border-right-color: var(--iron-black);
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: var(--arrow-size);
+}

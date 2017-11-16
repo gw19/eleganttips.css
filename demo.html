@@ -1,0 +1,71 @@
+<!doctype html>
+<html class='no-js' lang='zh-TW-Hant'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='x-ua-compatible' content='ie=edge'>
+  <title>Demo</title>
+  <meta name='description' content='demo'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <meta name='author' content='GW19'>
+
+  <link rel='stylesheet' href='normalize.css'>
+  <link rel='stylesheet' href='demo.css'>
+  <link rel='stylesheet' href='eleganttip.css'>
+  <script src='https://use.fontawesome.com/1e5f593df3.js'></script>
+</head>
+<body>
+
+<div class='container-navbar'>
+  <nav class='navbar navbar-main'>
+    <div class='nav-act-region'>
+      <a class='nav-brand' href='/'>∟階梯⊥</a>
+      <div class='nav-menu'>
+        <a class='nav-item nav-menu-btn et' href='#' aria-label='刊登節目'>
+          <i class='fa fa-file-text-o fa-2x nav-fa-link' aria-hidden='true'></i>
+        </a>
+        <a class='nav-item nav-menu-btn et' href='#'>
+          <i class='fa fa-search fa-2x nav-fa-link' aria-hidden='true'></i>
+          <span class='et-block et-bottom et-arrow'>探索節目啦啦啦</span>
+        </a>
+      </div>
+      <div class='nav-login'>
+        <a id='userInfo' class='nav-item nav-login-btn et' href='demo.html' aria-label='帳戶資訊'>
+          <i class='fa fa-user-o fa-2x nav-fa-login' aria-hidden='true'></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class='container-form-col'>
+  <h2 class='page-header'>歡迎登入</h2>
+  <section class='left-sec'>
+      <button type='submit' class='btn-api-fb' disabled='disabled'>使用 Facebook 登入<br>（未開放）</button>
+      <button type='submit' class='btn-api-google' disabled='disabled'>使用 Google+ 登入<br>（未開放）</button>
+  </section>
+  <section class='right-sec'>
+    <form method='post' id='formLogin' onsubmit='return false'>
+      <div class='form-group'>
+        <i class='fa fa-user-o fa-input' aria-hidden='true'></i>
+        <label for='account' class='et'>帳戶名稱<span class='et-block et-top et-arrow'>我是提示訊息     我是提示訊息</span></label>
+        <input type='text' class='form-input' id='account' placeholder='kslee' name='account'>
+      </div>
+      <div class='form-group'>
+        <i class='fa fa-key fa-input' aria-hidden='true'></i>
+        <label for='password'>密碼</label>
+        <input type='password' class='form-input' id='password'
+               placeholder='kslee1234' name='password' maxlength='14'>
+      </div>
+      <button type='submit' id='btnLogin' class='btn btn-form-login et'>登入
+        <span class='et-block et-right et-arrow' data-bgcolor='red'>我是提示訊息     我是提示訊息</span>
+      </button>
+      <div class='hint-login-page'>還沒有帳號嗎？&nbsp;&nbsp;
+        <a href='/' aria-label='註冊' class='link-custom'>立刻註冊</a>
+      </div>
+    </form>
+  </section>
+</div>
+
+</body>
+</html>
