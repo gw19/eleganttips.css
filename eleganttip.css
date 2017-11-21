@@ -4,8 +4,9 @@
 :root {
   --iron-black: #454545;
 
+  --white: #fffff2;
   --yellow: #fff2a5;
-  --goldenrod-yellow: #FAFAD2; /* lightgoldenrodyellow */
+  --light-yellow: #ffffe1; /* lightgoldenrodyellow */
 
   --red: #e62b27;
   --light-red: #E64945;
@@ -19,60 +20,150 @@
   --dark-orange: #EB7B2D;
 
   --max-width: 250px;
-  --arrow-size: 8px;
+  --border-thickness: 3px;
+  --arrow-size: 12px;
 }
+/* Avoid exceeding the boundaries */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .et {
-  cursor: pointer;
-  display: inline-block;
+  display: inline;
   position: relative;
 }
 .et .et-block {
-  visibility: hidden;
-  border-radius: 5px;
+  display: table-row-group;
+  background-color: var(--light-yellow);
+  border: var(--border-thickness) solid var(--light-blue);
+  border-radius: 6px;
+  color: var(--iron-black);
   cursor: default;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
+  height: auto;
+  margin: 10px -260px 0 0;
+  min-height: 20px;
+  max-width: 260px;
+  padding: 5px 8px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;  /* comment only when test */
+}
+.et-bottom.et-arrow::after {
+  border: var(--arrow-size) solid transparent;
+  border-bottom-color: var(--light-yellow);
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: calc(var(--arrow-size) * (-1));
+}
+.et-bottom.et-arrow::before {
+  border: calc(var(--arrow-size) + var(--border-thickness) + 2px) solid transparent;
+  border-bottom-color: var(--light-blue);
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: calc((var(--arrow-size) * (-1)) - (var(--border-thickness) + 2px));
+}
+/*  內容（比方說 font-size）的特性在此調整是沒作用的  */
+/*.et .et-block::after {*/
+  /*content: '';*/
+  /*display: inline-block;*/
+  /*position: fixed;*/
+  /*pointer-events: none;*/
+  /*font-size: 16px;*/
+/*}*/
+/*.et .et-block.et-bottom {*/
+  /*!*margin-top: 30px;*!*/
+  /*display: inline-block;*/
+  /*position: absolute;*/
+  /*right: 50%;*/
+  /*top: 100%;*/
+/*}*/
+.et:hover .et-block,
+.et:focus .et-block {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate3d(-50%, 5px, 0);
+  -webkit-transform: translate3d(-50%, 5px, 0);
+}
+
+
+
+
+
+
+
+/*.et .et-block {
+  !*visibility: hidden;*!
+  display: inline-block;
+  border: 5px solid var(--iron-black);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
   height: auto;
   min-height: 20px;
   padding: 5px;
-  position: absolute;
-  text-align: center;
-  white-space: pre;
+  position: fixed;
+  !*text-align: center;*!
   z-index: 10000;
-}
+
+  !* wrap *!
+  !*max-width: 90vmin;*!
+  white-space: pre;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  !*overflow: hidden;*!
+}*/
+
+
+
+
+/*
 .et:hover .et-block,
 .et:focus .et-block {
   visibility: visible;
+  pointer-events: auto;
+  position: absolute;
 }
 
-/* ==========================================================================
-   Color
-   ========================================================================== */
+!* ==========================================================================
+   Color cases
+   ========================================================================== *!
 
-/*  Default background-color  */
+!*  Default background-color  *!
 span:not([data-bgcolor]),
 span[data-bgcolor=''],
 span[data-bgcolor=' '] {
-  background-color: var(--iron-black);
+  !*background-color: var(--iron-black);*!
+  background-color: var(--yellow);
 }
-/*  Default color  */
+!*  Default color  *!
 span:not([data-color]),
 span[data-color=''],
 span[data-color=' '] {
-  color: var(--yellow);
+  !*color: var(--yellow);*!
+  color: var(--light-blue);
 }
 
-/*  Defined background-color  */
+!*  Defined background-color  *!
 span[data-bgcolor='red'] {
   background-color: var(--red);
 }
 
-/* ==========================================================================
-   Location
-   ========================================================================== */
+!* ==========================================================================
+   Location cases
+   ========================================================================== *!
 
 .et .et-block.et-bottom {
   content: '';
@@ -106,33 +197,28 @@ span[data-bgcolor='red'] {
   transform: translateY(-50%);
 }
 
-/*.et-arrow::after {*/
-  /*content: '';*/
-  /*position: absolute;*/
-  /*top: 100%;*/
-  /*left: 50%;*/
-  /*margin-left: -5px;*/
-  /*border: 5px solid transparent;*/
-/*}*/
 
+!* ==========================================================================
+   Arrow cases
+   ========================================================================== *!
 
 .et-bottom.et-arrow::after {
   border: var(--arrow-size) solid transparent;
   border-bottom-color: var(--iron-black);
   content: '';
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
+  bottom: 100%;  !* At the top of the tooltip *!
   left: 50%;
-  margin-left: var(--arrow-size);
+  margin-left: calc(var(--arrow-size) * (-1));
 }
 .et-top.et-arrow::after {
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--iron-black);
   content: '';
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%; !* At the bottom of the tooltip *!
   left: 50%;
-  margin-left: var(--arrow-size);
+  margin-left: calc(var(--arrow-size) * (-1));
 }
 .et-left.et-arrow::after {
   border: var(--arrow-size) solid transparent;
@@ -140,8 +226,8 @@ span[data-bgcolor='red'] {
   content: '';
   position: absolute;
   top: 50%;
-  left: 100%; /* To the right of the tooltip */
-  margin-top: var(--arrow-size);
+  left: 100%; !* To the right of the tooltip *!
+  margin-top: calc(var(--arrow-size) * (-1));
 }
 .et-right.et-arrow::after {
   border: var(--arrow-size) solid transparent;
@@ -149,6 +235,6 @@ span[data-bgcolor='red'] {
   content: '';
   position: absolute;
   top: 50%;
-  right: 100%; /* To the left of the tooltip */
-  margin-top: var(--arrow-size);
-}
+  right: 100%; !* To the left of the tooltip *!
+  margin-top: calc(var(--arrow-size) * (-1));
+}*/
