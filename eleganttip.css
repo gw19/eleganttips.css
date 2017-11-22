@@ -54,6 +54,8 @@
   left: 50%;
   transform: translate3d(-50%, 0, 0);
   transition: opacity 0.3s, transform 0.3s;
+  -webkit-filter: drop-shadow(-3px -3px 3px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(-3px -3px 3px rgba(0, 0, 0, 0.7));
   opacity: 0;  /* comment only when test */
 }
 .et-bottom.et-arrow::after {
