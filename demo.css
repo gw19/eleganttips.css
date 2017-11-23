@@ -11,21 +11,6 @@
    ========================================================================== */
 
 @font-face {
-  font-family: SourceHanSansTW-Medium;
-  src: url('../fonts/SourceHanSansTW-Medium.otf');
-}
-
-@font-face {
-  font-family: SourceHanSansTW-Regular;
-  src: url('../fonts/SourceHanSansTW-Regular.otf');
-}
-
-@font-face {
-  font-family: SourceHanSansTW-Light;
-  src: url('../fonts/SourceHanSansTW-Light.otf');
-}
-
-@font-face {
   font-family: custom-sans-serif;
   src: local('Microsoft YaHei'), local('微軟正黑體');
   unicode-range: U+4E00-9FFF;
@@ -54,7 +39,7 @@ p,
 button,
 form {
   color: #454545;
-  font-family: 'SourceHanSansTW-Medium', custom-sans-serif;
+  font-family: custom-sans-serif, sans-serif;
   font-size: 18px;
   height: 100%;
 }
@@ -195,7 +180,7 @@ input {
   /*border-radius: 5px;*/
   color: #363636;
   display: inline;
-  font-family: 'SourceHanSansTW-Regular', custom-sans-serif;
+  font-family: custom-sans-serif, sans-serif;
   font-size: 15px;
   line-height: 1.3;
   padding: 5px;
@@ -211,7 +196,7 @@ input:focus {
 /*  Jquery.validate label style  */
 label.error {
   color: #bd0000;
-  font-family: 'SourceHanSansTW-Medium', custom-sans-serif;
+  font-family: custom-sans-serif, sans-serif;
   font-size: 15px;
 }
 
@@ -462,10 +447,6 @@ label {
 .swal-button {
   font-size: 16px;
 }
-/*.swal-text {*/
-  /*font-family: 'SourceHanSansTW-Regular', '微軟正黑體', 'Segoe UI', sans-serif;*/
-/*}*/
-
 
 /* ==========================================================================
    Tooltip style
