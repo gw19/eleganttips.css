@@ -19,7 +19,10 @@
   --orange: #F0A32F;
   --dark-orange: #EB7B2D;
 
-  --max-width: 300px;
+  --max-width: 400px;
+  --max-width-small: 260px;
+  --max-width-large: 660px;
+
   --border-thickness: 3px;
   --font-size: 16px;
   --arrow-size-large: 12px;
@@ -45,7 +48,7 @@
 .et::after {
   /*background-color: black;  !* only when testing *!*/
   content: '';
-  cursor: default;
+  cursor: inherit;
   min-height: calc(100% + var(--pointer-event-area));
   min-width: calc(100% + var(--pointer-event-area));
   pointer-events: none;
@@ -67,7 +70,8 @@
 .et .et-bottom,
 .et .et-top,
 .et .et-left,
-.et .et-right {
+.et .et-right,
+.et .et-left-top {
   display: inline-block;
   background-color: var(--light-yellow);
   border: var(--border-thickness) solid var(--light-blue);
@@ -78,14 +82,14 @@
   font-weight: 500;
   height: auto;
   max-width: var(--max-width);
-  min-width: 100%;
+  /*min-width: 100%;*/
   padding: 5px 8px;
   pointer-events: none;
   position: absolute;
   text-align: left;
   transition: opacity 0.3s, transform 0.3s;
   -webkit-transition: opacity 0.3s, transform 0.3s;
-  opacity: 0;  /* comment only when testing */
+  /*opacity: 0;  !* comment only when testing *!*/
 }
 
 /* ==========================================================================
@@ -116,7 +120,7 @@
    Bottom tip-block
    ========================================================================== */
 .et .et-bottom {
-  margin: 10px -260px 0 0;
+  margin: 10px calc(var(--max-width) * -1) 0 0;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -141,7 +145,7 @@
    Top tip-block
    ========================================================================== */
 .et .et-top {
-  margin: 0 -260px 10px 0;
+  margin: 0 calc(var(--max-width) * -1) 10px 0;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -166,7 +170,7 @@
    Left tip-block
    ========================================================================== */
 .et .et-left {
-  margin: 0 10px 0 -260px;
+  margin: 0 10px 0 calc(var(--max-width) * -1);
   top: 50%;
   right: 100%;
   transform: translateY(-50%);
@@ -191,7 +195,7 @@
    Right tip-block
    ========================================================================== */
 .et .et-right {
-  margin: 0 -260px 0 10px;
+  margin: 0 calc(var(--max-width) * -1) 0 10px;
   top: 50%;
   left: 100%;
   transform: translateY(-50%);
@@ -211,6 +215,36 @@
   right: 100%;
   margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));
 }
+
+/* ==========================================================================
+   Left-top tip-block
+   ========================================================================== */
+.et .et-left-top {
+  margin: 0 0 0 calc(var(--max-width) * -1);
+  bottom: 100%;
+  right: 100%;
+  /*transform: translateY(-50%);*/
+  /*-webkit-transform: translateY(-50%);*/
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-left-top.et-arrow::after {
+  border-radius: 100%;
+  border: 12px solid moccasin;
+  border-left-color: transparent;
+  top: calc(100% - 2px);
+  left: calc(100% - 8px);
+  margin-top: calc(var(--arrow-size-small) * (-1));
+  transform: rotate(36deg);
+}
+/*.et .et-left-top.et-arrow::before {*/
+  /*border-left-color: var(--light-blue);*/
+  /*border-radius: 100%;*/
+  /*top: calc(100% - 2px);*/
+  /*left: calc(100% - 14px);*/
+  /*margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));*/
+  /*transform: rotate(45deg);*/
+/*}*/
 
 /* ==========================================================================
    .et hover & focus events
@@ -242,6 +276,13 @@
   pointer-events: auto;
   transform: translate(5px, -50%);
   -webkit-transform: translate(5px, -50%);
+}
+.et:hover .et-left-top,
+.et:focus .et-left-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-10px, -10px);
+  -webkit-transform: translate(-10px, -10px);
 }
 
 /* ==========================================================================
@@ -277,6 +318,16 @@
 .et .et-right.et-style1:before {
   border-right-color: #242d42;
 }
+
+/* ==========================================================================
+   Tip width definition
+   ========================================================================== */
+.et [class^='et-small'] {
+  max-width: var(--max-width-small);
+}
+.et [class^='et-large'] {
+  max-width: var(--max-width-large);
+}
 /*.et .et-block {*/
   /*display: inline-block;*/
   /*background-color: var(--light-yellow);*/
@@ -287,7 +338,7 @@
   /*font-size: var(--font-size);*/
   /*font-weight: 500;*/
   /*height: auto;*/
-  /*margin: 10px -260px 0 0;*/
+  /*margin: 10px calc(var(--max-width) * -1) 0 0;*/
   /*min-height: 20px;*/
   /*max-width: var(--max-width);*/
   /*min-width: 100%;*/
