@@ -89,7 +89,7 @@
   text-align: left;
   transition: opacity 0.3s, transform 0.3s;
   -webkit-transition: opacity 0.3s, transform 0.3s;
-  /*opacity: 0;  !* comment only when testing *!*/
+  opacity: 0;  /* comment only when testing */
 }
 
 /* ==========================================================================
@@ -288,10 +288,7 @@
 /* ==========================================================================
    Different styles, design your style here.
    ========================================================================== */
-.et .et-bottom.et-style1,
-.et .et-top.et-style1,
-.et .et-left.et-style1,
-.et .et-right.et-style1 {
+.et .et-style-night {
   background-color: #242d42;
   border: 0;
   border-radius: 0;
@@ -302,25 +299,25 @@
   transition: opacity 0.5s, transform 0.5s;
   -webkit-transition: opacity 0.5s, transform 0.5s;
 }
-.et .et-bottom.et-style1:after,
-.et .et-bottom.et-style1:before {
+.et .et-bottom.et-style-night:after,
+.et .et-bottom.et-style-night:before {
   border-bottom-color: #242d42;
 }
-.et .et-top.et-style1:after,
-.et .et-top.et-style1:before {
+.et .et-top.et-style-night:after,
+.et .et-top.et-style-night:before {
   border-top-color: #242d42;
 }
-.et .et-left.et-style1:after,
-.et .et-left.et-style1:before {
+.et .et-left.et-style-night:after,
+.et .et-left.et-style-night:before {
   border-left-color: #242d42;
 }
-.et .et-right.et-style1:after,
-.et .et-right.et-style1:before {
+.et .et-right.et-style-night:after,
+.et .et-right.et-style-night:before {
   border-right-color: #242d42;
 }
 
 /* ==========================================================================
-   Tip width definition
+   Tip block max-width definition
    ========================================================================== */
 .et [class^='et-small'] {
   max-width: var(--max-width-small);
