@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2626676-31bd-4e5f-9f74-01362849715f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example_style_night.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.css" afterPath="$PROJECT_DIR$/demo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eleganttip.css" afterPath="$PROJECT_DIR$/eleganttip.css" />
     </list>
@@ -18,23 +18,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="demo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10520">
-              <caret line="165" column="28" lean-forward="false" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="54">
+              <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1120#1124#0" expanded="true" />
@@ -42,18 +33,16 @@
                 <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1359#1363#1" expanded="true" />
                 <element signature="e#1464#1468#1" expanded="true" />
-                <element signature="e#3340#3346#0" expanded="true" />
-                <element signature="e#3346#3352#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eleganttip.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="eleganttip.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eleganttip.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5841">
-              <caret line="306" column="35" lean-forward="true" selection-start-line="306" selection-start-column="35" selection-end-line="306" selection-end-column="35" />
+            <state relative-caret-position="657">
+              <caret line="277" column="32" lean-forward="false" selection-start-line="277" selection-start-column="32" selection-end-line="277" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -63,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/css/tooltip-classic.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -72,9 +61,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
-              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+              <folding>
+                <marker date="1511560823000" expanded="true" signature="6838:7918" ph="..." />
+                <marker date="1511560823000" expanded="true" signature="6838:8414" ph="..." />
+                <marker date="1511560823000" expanded="true" signature="6838:8440" ph="..." />
+                <marker date="1511560823000" expanded="true" signature="6838:8468" ph="..." />
+                <marker date="1511560823000" expanded="true" signature="7975:8404" ph="..." />
+                <marker date="1511560823000" expanded="true" signature="8101:8209" ph="..." />
+                <marker date="1511560823000" expanded="true" signature="8278:8389" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,15 +131,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/demo.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tip.css" />
         <option value="$PROJECT_DIR$/demo.css" />
-        <option value="$PROJECT_DIR$/eleganttip.css" />
         <option value="$PROJECT_DIR$/../TooltipStylesInspiration-master/index.html" />
         <option value="$PROJECT_DIR$/../TooltipStylesInspiration-master/css/tooltip-classic.css" />
         <option value="$PROJECT_DIR$/demo.html" />
+        <option value="$PROJECT_DIR$/eleganttip.css" />
       </list>
     </option>
   </component>
@@ -158,10 +158,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="4" />
-    <option name="width" value="1940" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
     <option name="height" value="1042" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -196,19 +196,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="ElegantTip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ElegantTip" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ElegantTip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ElegantTip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,14 +241,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -281,6 +276,15 @@
       <option name="cucumberJsArguments" value="" />
       <option name="executablePath" />
       <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -329,18 +333,20 @@
       <workItem from="1511252653289" duration="1124000" />
       <workItem from="1511278798687" duration="3547000" />
       <workItem from="1511368595158" duration="1352000" />
-      <workItem from="1511530725359" duration="19366000" />
+      <workItem from="1511530725359" duration="19569000" />
+      <workItem from="1511565824905" duration="165000" />
+      <workItem from="1511616397386" duration="534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131812000" />
+    <option name="totallyTimeSpent" value="132714000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2474881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24708377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -377,7 +383,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -432,8 +438,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,8 +461,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -482,8 +484,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -507,8 +507,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -534,8 +532,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -568,8 +564,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -602,8 +596,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -636,8 +628,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,8 +662,6 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,15 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2592">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10520">
-          <caret line="165" column="28" lean-forward="false" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,34 +729,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/css/tooltip-classic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eleganttip.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5841">
-          <caret line="306" column="35" lean-forward="true" selection-start-line="306" selection-start-column="35" selection-end-line="306" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="270">
+          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <marker date="1511560823000" expanded="true" signature="6838:7918" ph="..." />
+            <marker date="1511560823000" expanded="true" signature="6838:8414" ph="..." />
+            <marker date="1511560823000" expanded="true" signature="6838:8440" ph="..." />
+            <marker date="1511560823000" expanded="true" signature="6838:8468" ph="..." />
+            <marker date="1511560823000" expanded="true" signature="7975:8404" ph="..." />
+            <marker date="1511560823000" expanded="true" signature="8101:8209" ph="..." />
+            <marker date="1511560823000" expanded="true" signature="8278:8389" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="54">
+          <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1120#1124#0" expanded="true" />
@@ -785,9 +764,23 @@
             <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1359#1363#1" expanded="true" />
             <element signature="e#1464#1468#1" expanded="true" />
-            <element signature="e#3340#3346#0" expanded="true" />
-            <element signature="e#3346#3352#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/css/tooltip-classic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eleganttip.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="277" column="32" lean-forward="false" selection-start-line="277" selection-start-column="32" selection-end-line="277" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

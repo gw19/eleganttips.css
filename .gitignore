@@ -3,4 +3,5 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 .idea
-.example_style_night
+img
+node_modules

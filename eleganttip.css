@@ -253,29 +253,29 @@
 .et:focus .et-bottom {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50%, 5px);
-  -webkit-transform: translate(-50%, 5px);
+  transform: translate(-50%, 6px);
+  -webkit-transform: translate(-50%, 6px);
 }
 .et:hover .et-top,
 .et:focus .et-top {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50%, -5px);
-  -webkit-transform: translate(-50%, -5px);
+  transform: translate(-50%, -6px);
+  -webkit-transform: translate(-50%, -6px);
 }
 .et:hover .et-left,
 .et:focus .et-left {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-5px, -50%);
-  -webkit-transform: translate(-5px, -50%);
+  transform: translate(-6px, -50%);
+  -webkit-transform: translate(-6px, -50%);
 }
 .et:hover .et-right,
 .et:focus .et-right {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(5px, -50%);
-  -webkit-transform: translate(5px, -50%);
+  transform: translate(6px, -50%);
+  -webkit-transform: translate(6px, -50%);
 }
 .et:hover .et-left-top,
 .et:focus .et-left-top {
