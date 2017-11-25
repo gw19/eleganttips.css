@@ -5,7 +5,7 @@
   --iron-black: #454545;
 
   --white: #fffff2;
-  --yellow: #fff2a5;
+  --yellow: #fff795;
   --light-yellow: #ffffe1; /* lightgoldenrodyellow */
 
   --red: #e62b27;
@@ -15,6 +15,7 @@
   --blue: #145b9b;
   --light-blue: #367abd;
   --dark-blue: #234990;
+  --night-blue: #242d42;
 
   --orange: #F0A32F;
   --dark-orange: #EB7B2D;
@@ -226,14 +227,12 @@
   margin: 0 0 0 calc(var(--max-width) * -1);
   bottom: 100%;
   right: 100%;
-  /*transform: translateY(-50%);*/
-  /*-webkit-transform: translateY(-50%);*/
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
   -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-left-top.et-arrow::after {
   border-radius: 6px;
-  border-right: 12px solid var(--iron-black);
+  border-right: 12px solid var(--yellow);
   top: calc(100% - 2px);
   left: calc(100% - 10px);
   margin-top: calc(var(--arrow-size-small) * (-1));
@@ -252,7 +251,7 @@
 }
 .et .et-right-top.et-arrow::after {
   border-radius: 6px;
-  border-left: 12px solid var(--iron-black);
+  border-left: 12px solid var(--yellow);
   top: calc(100% - 18px);
   right: calc(100% - 10px);
   margin-top: var(--arrow-size-small);
@@ -271,7 +270,7 @@
 }
 .et .et-left-bottom.et-arrow::after {
   border-radius: 6px;
-  border-right: 12px solid var(--iron-black);
+  border-right: 12px solid var(--yellow);
   bottom: calc(100% - 10px);
   left: calc(100% - 10px);
   margin-top: var(--arrow-size-small);
@@ -290,7 +289,7 @@
 }
 .et .et-right-bottom.et-arrow::after {
   border-radius: 6px;
-  border-left: 12px solid var(--iron-black);
+  border-left: 12px solid var(--yellow);
   bottom: calc(100% - 10px);
   right: calc(100% - 10px);
   margin-top: var(--arrow-size-small);
@@ -360,8 +359,9 @@
 /* ==========================================================================
    Different styles, design your style here.
    ========================================================================== */
+/*  ------ Night style ------  */
 .et .et-style-night {
-  background-color: #242d42;
+  background-color: var(--night-blue);
   border: 0;
   border-radius: 0;
   color: var(--yellow);
@@ -373,19 +373,72 @@
 }
 .et .et-bottom.et-style-night:after,
 .et .et-bottom.et-style-night:before {
-  border-bottom-color: #242d42;
+  border-bottom-color: var(--night-blue);
 }
 .et .et-top.et-style-night:after,
 .et .et-top.et-style-night:before {
-  border-top-color: #242d42;
+  border-top-color: var(--night-blue);
 }
 .et .et-left.et-style-night:after,
 .et .et-left.et-style-night:before {
-  border-left-color: #242d42;
+  border-left-color: var(--night-blue);
 }
 .et .et-right.et-style-night:after,
 .et .et-right.et-style-night:before {
-  border-right-color: #242d42;
+  border-right-color: var(--night-blue);
+}
+.et .et-left-bottom.et-style-night:after,
+.et .et-left-top.et-style-night:after {
+  border-right-color: var(--iron-black);
+}
+.et .et-right-bottom.et-style-night:after,
+.et .et-right-top.et-style-night:after {
+  border-left-color: var(--iron-black);
+}
+
+/*  ------ Warning style ------  */
+.et .et-style-warn {
+  background-color: var(--light-red);
+  border: 2px solid var(--yellow);
+  border-radius: 0;
+  color: var(--white);
+  filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  padding: 10px 20px;
+  transition: opacity 0.1s, transform 0.5s;
+  -webkit-transition: opacity 0.1s, transform 0.5s;
+}
+.et .et-bottom.et-style-warn:after {
+  border-bottom-color: var(--light-red);
+}
+.et .et-bottom.et-style-warn:before {
+  border-bottom-color: var(--yellow);
+}
+.et .et-top.et-style-warn:after {
+  border-top-color: var(--light-red);
+}
+.et .et-top.et-style-warn:before {
+  border-top-color: var(--yellow);
+}
+.et .et-left.et-style-warn:after {
+  border-left-color: var(--light-red);
+}
+.et .et-left.et-style-warn:before {
+  border-left-color: var(--yellow);
+}
+.et .et-right.et-style-warn:after {
+  border-right-color: var(--light-red);
+}
+.et .et-right.et-style-warn:before {
+  border-right-color: var(--yellow);
+}
+.et .et-left-bottom.et-style-warn:after,
+.et .et-left-top.et-style-warn:after {
+  border-right-color: var(--red);
+}
+.et .et-right-bottom.et-style-warn:after,
+.et .et-right-top.et-style-warn:after {
+  border-left-color: var(--red);
 }
 
 /* ==========================================================================

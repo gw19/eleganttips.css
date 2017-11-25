@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/demo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+              <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1120#1124#0" expanded="true" />
@@ -39,8 +39,8 @@
       <file leaf-file-name="eleganttip.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eleganttip.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="399" column="0" lean-forward="true" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
+            <state relative-caret-position="3388">
+              <caret line="440" column="32" lean-forward="true" selection-start-line="440" selection-start-column="32" selection-end-line="440" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -118,6 +118,7 @@
       <find>font-s</find>
       <find>opa</find>
       <find>36deg</find>
+      <find>#242d42</find>
     </findStrings>
     <replaceStrings>
       <replace>et</replace>
@@ -126,6 +127,7 @@
       <replace>calc(var(--max-width) * -1)</replace>
       <replace>style-night</replace>
       <replace>45deg</replace>
+      <replace>var(--night-blue)</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -335,12 +337,12 @@
       <workItem from="1511368595158" duration="1352000" />
       <workItem from="1511530725359" duration="19569000" />
       <workItem from="1511565824905" duration="165000" />
-      <workItem from="1511616397386" duration="7958000" />
+      <workItem from="1511616397386" duration="10992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140138000" />
+    <option name="totallyTimeSpent" value="143172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -384,6 +386,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -764,7 +776,7 @@
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1120#1124#0" expanded="true" />
@@ -778,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eleganttip.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="399" column="0" lean-forward="true" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
+        <state relative-caret-position="3388">
+          <caret line="440" column="32" lean-forward="true" selection-start-line="440" selection-start-column="32" selection-end-line="440" selection-end-column="32" />
           <folding />
         </state>
       </provider>
