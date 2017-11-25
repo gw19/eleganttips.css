@@ -1,6 +1,56 @@
 /* ==========================================================================
-   Elegant Tip CSS main file
+   Elegant Tip v1.0.5
+   Copyright (c) 2017 Guan-Wen CHEN <imgw19@gmail.com>
+
+   A simple and elegant tooltip with pure CSS implementation.
+
+   * Usage *
+
+   [Necessary]
+   Classes added into tag:
+       et: the tag you want to show elegant tip.
+
+   (e.g. <button class='et'>...</button>)
+
+   Then create <span></span> inside the tag which has class 'et',
+   (e.g. <button class='et'>...<span>..</span></button>),
+    and one of the following tag is necessary to added in <span> tag,
+
+       et-bottom: show tooltip on bottom,
+       et-top,
+       et-left,
+       et-right,
+       et-left-bottom,
+       et-left-top,
+       et-right-bottom,
+       et-right-top
+
+   (e.g. <button class='et'>...<span class='et-top'>..</span></button>,
+    will show tooltip on top of button.)
+
+   [optional]
+   1. arrow:
+       et-arrow: show arrow of tooltip
+
+   (e.g. <button class='et'>...<span class='et-top et-arrow'>..</span></button>)
+
+   2. other styles:
+       et-style-night
+       et-style-warn
+
+   (e.g. <button class='et'>...<span class='et-top et-arrow et-style-night'>..</span></button>)
+
+   3. tooltip block width:
+       et-narrow: make tooltip block narrow (used in mobile)
+       et-wide: make tooltip block narrow
+
+   (e.g. <button class='et'>...
+           <span class='et-top et-arrow et-style-night et-narrow'>..
+           </span>
+         </button>
+   )
    ========================================================================== */
+
 :root {
   --iron-black: #454545;
 
@@ -444,9 +494,9 @@
 /* ==========================================================================
    Tip block max-width definition
    ========================================================================== */
-.et .et-small {
+.et .et-narrow {
   max-width: var(--max-width-small); !important;
 }
-.et .et-large {
+.et .et-wide {
   max-width: var(--max-width-large); !important;
 }
