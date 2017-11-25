@@ -71,7 +71,10 @@
 .et .et-top,
 .et .et-left,
 .et .et-right,
-.et .et-left-top {
+.et .et-left-top,
+.et .et-right-top,
+.et .et-left-bottom,
+.et .et-right-bottom {
   display: inline-block;
   background-color: var(--light-yellow);
   border: var(--border-thickness) solid var(--light-blue);
@@ -229,22 +232,70 @@
   -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-left-top.et-arrow::after {
-  border-radius: 100%;
-  border: 12px solid moccasin;
-  border-left-color: transparent;
+  border-radius: 6px;
+  border-right: 12px solid var(--iron-black);
   top: calc(100% - 2px);
-  left: calc(100% - 8px);
+  left: calc(100% - 10px);
   margin-top: calc(var(--arrow-size-small) * (-1));
-  transform: rotate(36deg);
+  transform: rotate(45deg);
 }
-/*.et .et-left-top.et-arrow::before {*/
-  /*border-left-color: var(--light-blue);*/
-  /*border-radius: 100%;*/
-  /*top: calc(100% - 2px);*/
-  /*left: calc(100% - 14px);*/
-  /*margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));*/
-  /*transform: rotate(45deg);*/
-/*}*/
+
+/* ==========================================================================
+   Right-top tip-block
+   ========================================================================== */
+.et .et-right-top {
+  margin: 0 calc(var(--max-width) * -1) 0 0;
+  bottom: 100%;
+  left: 100%;
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-right-top.et-arrow::after {
+  border-radius: 6px;
+  border-left: 12px solid var(--iron-black);
+  top: calc(100% - 18px);
+  right: calc(100% - 10px);
+  margin-top: var(--arrow-size-small);
+  transform: rotate(-45deg);
+}
+
+/* ==========================================================================
+   Left-bottom tip-block
+   ========================================================================== */
+.et .et-left-bottom {
+  margin: 0 0 0 calc(var(--max-width) * -1);
+  top: 100%;
+  right: 100%;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-left-bottom.et-arrow::after {
+  border-radius: 6px;
+  border-right: 12px solid var(--iron-black);
+  bottom: calc(100% - 10px);
+  left: calc(100% - 10px);
+  margin-top: var(--arrow-size-small);
+  transform: rotate(-45deg);
+}
+
+/* ==========================================================================
+   Right-bottom tip-block
+   ========================================================================== */
+.et .et-right-bottom {
+  margin: 0 calc(var(--max-width) * -1) 0 0;
+  top: 100%;
+  left: 100%;
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-right-bottom.et-arrow::after {
+  border-radius: 6px;
+  border-left: 12px solid var(--iron-black);
+  bottom: calc(100% - 10px);
+  right: calc(100% - 10px);
+  margin-top: var(--arrow-size-small);
+  transform: rotate(45deg);
+}
 
 /* ==========================================================================
    .et hover & focus events
@@ -284,6 +335,27 @@
   transform: translate(-10px, -10px);
   -webkit-transform: translate(-10px, -10px);
 }
+.et:hover .et-right-top,
+.et:focus .et-right-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(10px, -10px);
+  -webkit-transform: translate(10px, -10px);
+}
+.et:hover .et-left-bottom,
+.et:focus .et-left-bottom {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-10px, 10px);
+  -webkit-transform: translate(-10px, 10px);
+}
+.et:hover .et-right-bottom,
+.et:focus .et-right-bottom {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(10px, 10px);
+  -webkit-transform: translate(10px, 10px);
+}
 
 /* ==========================================================================
    Different styles, design your style here.
@@ -319,218 +391,9 @@
 /* ==========================================================================
    Tip block max-width definition
    ========================================================================== */
-.et [class^='et-small'] {
-  max-width: var(--max-width-small);
+.et .et-small {
+  max-width: var(--max-width-small); !important;
 }
-.et [class^='et-large'] {
-  max-width: var(--max-width-large);
+.et .et-large {
+  max-width: var(--max-width-large); !important;
 }
-/*.et .et-block {*/
-  /*display: inline-block;*/
-  /*background-color: var(--light-yellow);*/
-  /*border: var(--border-thickness) solid var(--light-blue);*/
-  /*border-radius: 6px;*/
-  /*color: var(--iron-black);*/
-  /*cursor: default;*/
-  /*font-size: var(--font-size);*/
-  /*font-weight: 500;*/
-  /*height: auto;*/
-  /*margin: 10px calc(var(--max-width) * -1) 0 0;*/
-  /*min-height: 20px;*/
-  /*max-width: var(--max-width);*/
-  /*min-width: 100%;*/
-  /*padding: 5px 8px;*/
-  /*pointer-events: none;*/
-  /*position: absolute;*/
-  /*text-align: center;*/
-  /*top: 100%;*/
-  /*left: 50%;*/
-  /*transform: translateX(-50%);*/
-  /*-webkit-transform: translateX(-50%);*/
-  /*transition: opacity 0.3s, transform 0.3s;*/
-  /*-webkit-transition: opacity 0.3s, transform 0.3s;*/
-  /*filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));*/
-  /*-webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));*/
-  /*opacity: 0;  !* comment only when testing *!*/
-  /*z-index: 999999;*/
-/*}*/
-/*.et-block::after,*/
-/*.et-bottom.et-arrow::after {*/
-  /*border: var(--arrow-size-large) solid transparent;*/
-  /*border-bottom-color: var(--light-yellow);*/
-  /*content: '';*/
-  /*pointer-events: auto;*/
-  /*position: absolute;*/
-  /*bottom: 100%;*/
-  /*left: 50%;*/
-  /*margin-left: calc(var(--arrow-size-large) * (-1));*/
-/*}*/
-/*.et-block::before,*/
-/*.et-bottom.et-arrow::before {*/
-  /*border: calc(var(--arrow-size-large) + var(--border-thickness) + 2px) solid transparent;*/
-  /*border-bottom-color: var(--light-blue);*/
-  /*content: '';*/
-  /*pointer-events: auto;*/
-  /*position: absolute;*/
-  /*bottom: 100%;*/
-  /*left: 50%;*/
-  /*margin-left: calc((var(--arrow-size-large) * (-1)) - (var(--border-thickness) + 2px));*/
-/*}*/
-/*  內容（比方說 font-size）的特性在此調整是沒作用的  */
-/*.et .et-block::after {*/
-  /*content: '';*/
-  /*display: inline-block;*/
-  /*position: fixed;*/
-  /*pointer-events: none;*/
-  /*font-size: 16px;*/
-/*}*/
-/*.et .et-block.et-bottom {*/
-  /*!*margin-top: 30px;*!*/
-  /*display: inline-block;*/
-  /*position: absolute;*/
-  /*right: 50%;*/
-  /*top: 100%;*/
-/*}*/
-
-
-
-
-
-
-
-
-/*.et .et-block {
-  !*visibility: hidden;*!
-  display: inline-block;
-  border: 5px solid var(--iron-black);
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  height: auto;
-  min-height: 20px;
-  padding: 5px;
-  position: fixed;
-  !*text-align: center;*!
-  z-index: 10000;
-
-  !* wrap *!
-  !*max-width: 90vmin;*!
-  white-space: pre;
-  word-wrap: break-word;
-  text-overflow: ellipsis;
-  !*overflow: hidden;*!
-}*/
-
-
-
-
-/*
-.et:hover .et-block,
-.et:focus .et-block {
-  visibility: visible;
-  pointer-events: auto;
-  position: absolute;
-}
-
-!* ==========================================================================
-   Color cases
-   ========================================================================== *!
-
-!*  Default background-color  *!
-span:not([data-bgcolor]),
-span[data-bgcolor=''],
-span[data-bgcolor=' '] {
-  !*background-color: var(--iron-black);*!
-  background-color: var(--yellow);
-}
-!*  Default color  *!
-span:not([data-color]),
-span[data-color=''],
-span[data-color=' '] {
-  !*color: var(--yellow);*!
-  color: var(--light-blue);
-}
-
-!*  Defined background-color  *!
-span[data-bgcolor='red'] {
-  background-color: var(--red);
-}
-
-!* ==========================================================================
-   Location cases
-   ========================================================================== *!
-
-.et .et-block.et-bottom {
-  content: '';
-  margin-top: 10px;
-  right: 50%;
-  top: 100%;
-  transform: translateX(50%);
-}
-.et .et-block.et-top {
-  content: '';
-  margin-top: 0;
-  margin-bottom: 10px;
-  right: 50%;
-  bottom: 100%;
-  transform: translateX(50%);
-}
-.et .et-block.et-left {
-  content: '';
-  margin-top: 0;
-  margin-right: 10px;
-  right: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.et .et-block.et-right {
-  content: '';
-  margin-top: 0;
-  margin-left: 10px;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-!* ==========================================================================
-   Arrow cases
-   ========================================================================== *!
-
-.et-bottom.et-arrow::after {
-  border: var(--arrow-size-large) solid transparent;
-  border-bottom-color: var(--iron-black);
-  content: '';
-  position: absolute;
-  bottom: 100%;  !* At the top of the tooltip *!
-  left: 50%;
-  margin-left: calc(var(--arrow-size-large) * (-1));
-}
-.et-top.et-arrow::after {
-  border: var(--arrow-size-large) solid transparent;
-  border-top-color: var(--iron-black);
-  content: '';
-  position: absolute;
-  top: 100%; !* At the bottom of the tooltip *!
-  left: 50%;
-  margin-left: calc(var(--arrow-size-large) * (-1));
-}
-.et-left.et-arrow::after {
-  border: var(--arrow-size-large) solid transparent;
-  border-left-color: var(--iron-black);
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 100%; !* To the right of the tooltip *!
-  margin-top: calc(var(--arrow-size-large) * (-1));
-}
-.et-right.et-arrow::after {
-  border: var(--arrow-size-large) solid transparent;
-  border-right-color: var(--iron-black);
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 100%; !* To the left of the tooltip *!
-  margin-top: calc(var(--arrow-size-large) * (-1));
-}*/

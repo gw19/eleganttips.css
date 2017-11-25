@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2626676-31bd-4e5f-9f74-01362849715f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example_style_night.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eleganttip.css" afterPath="$PROJECT_DIR$/eleganttip.css" />
@@ -24,8 +22,8 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
+            <state relative-caret-position="343">
+              <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1120#1124#0" expanded="true" />
@@ -41,8 +39,8 @@
       <file leaf-file-name="eleganttip.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eleganttip.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="277" column="32" lean-forward="false" selection-start-line="277" selection-start-column="32" selection-end-line="277" selection-end-column="32" />
+            <state relative-caret-position="607">
+              <caret line="399" column="0" lean-forward="true" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +115,9 @@
       <find>cursor</find>
       <find>style1</find>
       <find>*</find>
-      <find>opa</find>
       <find>font-s</find>
+      <find>opa</find>
+      <find>36deg</find>
     </findStrings>
     <replaceStrings>
       <replace>et</replace>
@@ -126,6 +125,7 @@
       <replace>--arrow-size-large</replace>
       <replace>calc(var(--max-width) * -1)</replace>
       <replace>style-night</replace>
+      <replace>45deg</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -335,12 +335,12 @@
       <workItem from="1511368595158" duration="1352000" />
       <workItem from="1511530725359" duration="19569000" />
       <workItem from="1511565824905" duration="165000" />
-      <workItem from="1511616397386" duration="534000" />
+      <workItem from="1511616397386" duration="7958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132714000" />
+    <option name="totallyTimeSpent" value="140138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -753,10 +753,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/css/tooltip-classic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
+        <state relative-caret-position="343">
+          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1120#1124#0" expanded="true" />
@@ -768,18 +776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TooltipStylesInspiration-master/css/tooltip-classic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eleganttip.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="277" column="32" lean-forward="false" selection-start-line="277" selection-start-column="32" selection-end-line="277" selection-end-column="32" />
+        <state relative-caret-position="607">
+          <caret line="399" column="0" lean-forward="true" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
           <folding />
         </state>
       </provider>
