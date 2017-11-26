@@ -74,7 +74,7 @@
   --max-width-small: 260px;
   --max-width-large: 660px;
 
-  --border-thickness: 3px;
+  --border-thickness: 2px;
   --font-size: 16px;
   --arrow-size-large: 12px;
   --arrow-size-small: 8px;
@@ -90,7 +90,6 @@
 .et {
   display: inline;
   position: relative;
-  z-index: 99999;
 }
 
 /* ==========================================================================
@@ -108,7 +107,6 @@
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  /*opacity: 0.5;  !* only when testing *!*/
 }
 .et:hover::after,
 .et:focus::after {
@@ -136,7 +134,6 @@
   font-weight: 500;
   height: auto;
   max-width: var(--max-width);
-  /*min-width: 100%;*/
   padding: 5px 8px;
   pointer-events: none;
   position: absolute;
@@ -144,6 +141,7 @@
   transition: opacity 0.3s, transform 0.3s;
   -webkit-transition: opacity 0.3s, transform 0.3s;
   opacity: 0;  /* comment only when testing */
+  z-index: 999999;
 }
 
 /* ==========================================================================
@@ -154,12 +152,14 @@
   content: '';
   pointer-events: auto;
   position: absolute;
+  z-index: 999999;
 }
 .et .et-arrow::before {
   border: calc(var(--arrow-size-large) + var(--border-thickness) + 2px) solid transparent;
   content: '';
   pointer-events: auto;
   position: absolute;
+  z-index: 999999;
 }
 .et .et-left.et-arrow::after,
 .et .et-right.et-arrow::after {

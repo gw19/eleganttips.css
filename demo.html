@@ -6,84 +6,161 @@
   <title>Demo</title>
   <meta name='description' content='demo'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-
   <meta name='author' content='GW19'>
-
-  <link rel='stylesheet' href='normalize.css'>
   <link rel='stylesheet' href='demo.css'>
   <link rel='stylesheet' href='eleganttip.css'>
   <script src='https://use.fontawesome.com/1e5f593df3.js'></script>
 </head>
 <body>
 
-<div class='container-navbar'>
-  <nav class='navbar navbar-main'>
-    <div class='nav-act-region'>
-      <a class='nav-brand' href='/'>∟階梯⊥</a>
-      <div class='nav-menu'>
-        <a class='nav-item nav-menu-btn' href='#' aria-label='刊登節目'>
-          <i class='fa fa-file-text-o fa-2x nav-fa-link' aria-hidden='true'></i>
-        </a>
-        <div class='nav-item nav-menu-btn et'>
-          <i class='fa fa-search fa-2x nav-fa-link' aria-hidden='true'></i>
-          <span class='et-bottom et-arrow et-style-night'>
-            <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span>
-            <br><br>
-            臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。誠宜開張聖聽，以光先帝遺德，恢宏志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。......
-            <span style='color: whitesmoke; font: 18px bold;'>&lt;<a href='https://zh.wikisource.org/wiki/%E5%89%8D%E5%87%BA%E5%B8%AB%E8%A1%A8' target='_blank'>詳全文</a>&gt;</span>
-            <br><br>
-            <span><img src='img/example_style_night.png' width='100%'/></span>
-          </span>
-        </div>
-      </div>
-      <div class='nav-login'>
-        <a id='userInfo' class='nav-item nav-login-btn et' href='demo.html' aria-label='帳戶資訊'>
-          <i class='fa fa-user-o fa-2x nav-fa-login' aria-hidden='true'></i>
-        </a>
-      </div>
-    </div>
-  </nav>
+<nav class='nav'>
+<div class='nav-content'>Elegant Tip 範例
+  <a class='my-page' href='https://github.com/gw19' target='_blank'>
+    <i class='fa fa-github' aria-hidden='true'></i>
+  </a>
+</div>
+</nav>
+<div class='container'>
+  <p style='color: #E64945'>＊ 請將滑鼠指到下列各按鈕上以看範例</p>
+  <span class='title'>方位<span>（子元素 &lt;span&gt; 必填的 class）</span>：<br></span>
+  <div class='sec1'>
+
+    <button type='submit' class='btn et'>向上看<br>et-top
+      <span class='et-top et-arrow'>我是上方提示訊息</span>
+    </button>
+
+    <button class='btn et'>向下看<br>et-bottom
+      <span class='et-bottom et-arrow'>而我是下方提示訊息</span>
+    </button>
+
+    <button type='submit' class='btn et'>向左看<br>et-left
+      <span class='et-left et-arrow'>左邊也有提示訊息</span>
+    </button>
+
+    <button type='submit' class='btn et'>向右看<br>et-right
+      <span class='et-right et-arrow'>右邊還有提示訊息</span>
+    </button>
+
+  </div>
+
+  <div class='sec2'>
+    <button type='submit' class='btn et'>右上角<br>et-right-top
+      <span class='et-right-top et-arrow'>右上角有什麼？</span>
+    </button>
+    <button type='submit' class='btn et'>左上角<br>et-left-top
+      <span class='et-left-top et-arrow'>其實我是半個左撇子</span>
+    </button><br>
+    <button type='submit' class='btn et'>右下角<br>et-right-bottom
+      <span class='et-right-bottom et-arrow'>架子的右下方有放半島鐵盒。</span>
+    </button>
+    <button type='submit' class='btn et'>左下角<br>et-left-bottom
+      <span class='et-left-bottom et-arrow'>左下角的妳</span>
+    </button>
+  </div>
+  <br>
+
+  <span class='title'>樣式<span>（選擇性加入子元素 &lt;span&gt; 的 class）</span>：<br></span>
+  <div class='sec3'>
+
+    <button type='submit' class='btn et'>預設樣式<br><br>
+      <span class='et-top et-arrow'>
+      <span style='color: #E64945; font: 18px bold;'>白居易 &lt;琵琶行&gt;</span>
+      <br><br>
+        潯陽江頭夜送客，楓葉荻花秋瑟瑟。<br>
+        主人下馬客在船，舉酒欲飲無管絃。<br>
+        醉不成歡慘將別，別時茫茫江浸月。<br>
+        忽聞水上琵琶聲，主人忘歸客不發。<br>
+        尋聲暗問彈者誰？琵琶聲停欲語遲。<br>
+        移船相近邀相見，添酒回燈重開宴。<br>
+        千呼萬喚始出來，猶抱琵琶半遮面。<br>
+        轉軸撥絃三兩聲，未成曲調先有情。<br>
+        ......
+      <span style='color: #6495ED; font: 18px bold;'>&lt;
+        <a href='https://zh.wikisource.org/zh-hant/%E7%90%B5%E7%90%B6%E8%A1%8C'
+           target='_blank'>詳全文</a>&gt;<br><br></span>
+      </span>
+    </button>
+
+    <button class='btn et'>夜幕樣式<br>et-style-night
+      <span class='et-top et-arrow et-style-night'>
+      <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span>
+      <br><br>
+      臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。
+        然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。
+        誠宜開張聖聽，以光先帝遺德，恢宏志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。......
+      <span style='color: whitesmoke; font: 18px bold;'>
+        &lt;<a href='https://zh.wikisource.org/wiki/%E5%89%8D%E5%87%BA%E5%B8%AB%E8%A1%A8'
+               target='_blank'>詳全文</a>&gt;
+      </span>
+      <br><br>
+        <span><img src='img/example_style_night.png' width='100%'/></span></span>
+    </button>
+
+    <button type='submit' class='btn et'>警告樣式<br>et-style-warn
+      <span class='et-left-top et-arrow et-style-warn'>
+        <span style='float: left; text-align: center'><img src='img/warning.png' width='15%'/></span>
+        警告！兒童樂園只准許15歲以下的孩子遊玩，<br>
+          你可以陪他們進去，但是不准玩遊樂設施！
+      </span>
+    </button>
+
+  </div>
+
+  <br>
+  <span class='title'>箭頭
+    <span>（預設為沒有箭頭，想要箭頭請將 et-arrow 加入 &lt;span&gt; 的 class）</span>：<br>
+  </span>
+  <div class='sec4'>
+
+    <button type='submit' class='btn et'>沒有箭頭的訊息
+      <span class='et-top'>預設為沒有箭頭，想要箭頭嗎？<br>請將 et-arrow 加入 class！</span>
+    </button>
+
+    <button class='btn et'>都可以是沒有箭頭的訊息
+      <span class='et-top et-style-night'>
+      <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span>
+      <br><br>
+      臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。
+        然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。
+        誠宜開張聖聽，以光先帝遺德，恢宏志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。......
+      <span style='color: whitesmoke; font: 18px bold;'>&lt;<a href='https://zh.wikisource.org/wiki/%E5%89%8D%E5%87%BA%E5%B8%AB%E8%A1%A8' target='_blank'>詳全文</a>&gt;</span>
+      <br><br>
+        <span><img src='img/example_style_night.png' width='100%'/></span></span>
+    </button>
+
+  </div>
+
+  <br>
+  <span class='title'>寬度<span>（選擇性加入子元素 &lt;span&gt; 的 class）</span>：<br></span>
+  <div class='sec5'>
+
+    <button type='submit' class='btn et'>比較窄的訊息
+      <span class='et-top et-arrow et-narrow'>這個寬度是 260px <br>
+      啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</span>
+    </button>
+
+    <button type='submit' class='btn et'>比較寬的訊息
+      <span class='et-top et-arrow et-wide'>
+        這個寬度有 660px 哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦<br>
+      重複一次，這個寬度有 660px 哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦</span>
+    </button>
+
+    <button type='submit' class='btn et'>預設的寬度
+      <span class='et-top et-arrow'>
+        &lt;------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        預設寬度為 400 px
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;------&gt;
+      </span>
+    </button>
+  </div>
+
 </div>
 
-<div class='container-form-col'>
-  <h2 class='page-header'>歡迎登入</h2>
-  <section class='left-sec'>
-      <button type='submit' class='btn-api-fb et' disabled='disabled'>使用 Facebook 登入<br>（未開放）
-        <span class='et-top et-arrow'>探索節目啦啦啦</span>
-      </button>
-      <button type='submit' class='btn-api-google' disabled='disabled'>使用 Google+ 登入<br>（未開放）</button>
-  </section>
-  <section class='right-sec'>
-    <form method='post' id='formLogin' onsubmit='return false'>
-      <div class='form-group'>
-        <i class='fa fa-user-o fa-input' aria-hidden='true'></i>
-        <label for='account' class='et'>帳戶名稱
-          <span class='et-right-top et-arrow'>我是提示訊息     我是提示訊息</span>
-        </label>
-        <input type='text' class='form-input' id='account' placeholder='kslee' name='account'>
-      </div>
-      <div class='form-group'>
-        <i class='fa fa-key fa-input' aria-hidden='true'></i>
-        <label for='password'>密碼</label>
-        <input type='password' class='form-input' id='password'
-               placeholder='kslee1234' name='password' maxlength='14'>
-      </div>
-      <button type='submit' id='btnLogin' class='btn btn-form-login et'>登入
-        <span class='et-left-top et-arrow et-style-warn' data-bgcolor=''>
-          我是提示訊息     我是提示訊息
-          我是提示訊息     我是提示訊息
-          我是提示訊息     我是提示訊息
-          我是提示訊息     我是提示訊息
-          我是提示訊息     我是提示訊息
-          我是提示訊息     我是提示訊息
-        </span>
-      </button>
-      <div class='hint-login-page'>還沒有帳號嗎？&nbsp;&nbsp;
-        <a href='/' aria-label='註冊' class='link-custom'>立刻註冊</a>
-      </div>
-    </form>
-  </section>
-</div>
+<footer class='footer'>
+  <div class='footer-content'>&copy; 2017 Guan-Wen CHEN. All rights reserved.</div>
+</footer>
 
 </body>
 </html>
