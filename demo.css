@@ -155,6 +155,7 @@ a {
 
 .my-page {
   float: right;
+  padding-top: 2px;
 }
 .fa.fa-github {
   color: #454545;

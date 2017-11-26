@@ -14,14 +14,17 @@
 <body>
 
 <nav class='nav'>
-<div class='nav-content'>Elegant Tip 範例
-  <a class='my-page' href='https://github.com/gw19' target='_blank'>
-    <i class='fa fa-github' aria-hidden='true'></i>
-  </a>
-</div>
+  <div class='nav-content'>Elegant Tip 範例
+    <a class='my-page' href='https://github.com/gw19' target='_blank'>
+      <i class='fa fa-github' aria-hidden='true'></i>
+    </a>
+  </div>
 </nav>
 <div class='container'>
   <p style='color: #E64945'>＊ 請將滑鼠指到下列各按鈕上以看範例</p>
+
+  <!--  方位  -->
+
   <span class='title'>方位<span>（子元素 &lt;span&gt; 必填的 class）</span>：<br></span>
   <div class='sec1'>
 
@@ -49,7 +52,7 @@
     </button>
     <button type='submit' class='btn et'>左上角<br>et-left-top
       <span class='et-left-top et-arrow'>其實我是半個左撇子</span>
-    </button><br>
+    </button>
     <button type='submit' class='btn et'>右下角<br>et-right-bottom
       <span class='et-right-bottom et-arrow'>架子的右下方有放半島鐵盒。</span>
     </button>
@@ -58,6 +61,8 @@
     </button>
   </div>
   <br>
+
+  <!--  樣式  -->
 
   <span class='title'>樣式<span>（選擇性加入子元素 &lt;span&gt; 的 class）</span>：<br></span>
   <div class='sec3'>
@@ -103,49 +108,51 @@
           你可以陪他們進去，但是不准玩遊樂設施！
       </span>
     </button>
-
   </div>
-
   <br>
+
+  <!--  箭頭  -->
+
   <span class='title'>箭頭
-    <span>（預設為沒有箭頭，想要箭頭請將 et-arrow 加入 &lt;span&gt; 的 class）</span>：<br>
+    <span>（預設為<u>沒有箭頭</u>，想要箭頭請將 et-arrow 加入 &lt;span&gt; 的 class）</span>：<br>
   </span>
   <div class='sec4'>
 
-    <button type='submit' class='btn et'>沒有箭頭的訊息
-      <span class='et-top'>預設為沒有箭頭，想要箭頭嗎？<br>請將 et-arrow 加入 class！</span>
+    <button type='submit' class='btn et'>有箭頭的訊息
+      <span class='et-top et-arrow'>預設為<strong>沒有箭頭</strong>，想要箭頭嗎？<br>請將 et-arrow 加入 class！</span>
     </button>
 
-    <button class='btn et'>都可以是沒有箭頭的訊息
+    <button class='btn et'>預設都是沒有箭頭的訊息
       <span class='et-top et-style-night'>
-      <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span>
+      <span style='color: #00e584; font: 18px bold;'>國不應同出的</span>
       <br><br>
-      臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。
-        然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。
-        誠宜開張聖聽，以光先帝遺德，恢宏志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。......
-      <span style='color: whitesmoke; font: 18px bold;'>&lt;<a href='https://zh.wikisource.org/wiki/%E5%89%8D%E5%87%BA%E5%B8%AB%E8%A1%A8' target='_blank'>詳全文</a>&gt;</span>
+      已個你海笑紙天他花，歌報兩代該大的據同不，大品他但去世外學充一所格事東、星的立響入們部難可進下業神自原地的靈面定法單印級平？大空火是新安，是之打有他速報據學一地去得一條重子許聞了上也我較來候，學還腦、系星天留助紀升通天情日們漸。
+      <span style='color: whitesmoke; font: 18px bold;'>
+        （<a href='http://www.richyli.com/tool/loremipsum/' target='_blank'>亂數假文產生器</a>）
+      </span>
       <br><br>
-        <span><img src='img/example_style_night.png' width='100%'/></span></span>
+      </span>
     </button>
-
   </div>
-
   <br>
-  <span class='title'>寬度<span>（選擇性加入子元素 &lt;span&gt; 的 class）</span>：<br></span>
+
+  <!--  最大寬度  -->
+
+  <span class='title'>最大寬度<span>（選擇性加入子元素 &lt;span&gt; 的 class）</span>：<br></span>
   <div class='sec5'>
 
-    <button type='submit' class='btn et'>比較窄的訊息
+    <button type='submit' class='btn et'>比較窄的訊息<br>et-narrow
       <span class='et-top et-arrow et-narrow'>這個寬度是 260px <br>
       啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</span>
     </button>
 
-    <button type='submit' class='btn et'>比較寬的訊息
+    <button type='submit' class='btn et'>比較寬的訊息<br>et-wide
       <span class='et-top et-arrow et-wide'>
         這個寬度有 660px 哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦<br>
       重複一次，這個寬度有 660px 哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦</span>
     </button>
 
-    <button type='submit' class='btn et'>預設的寬度
+    <button type='submit' class='btn et'>預設的寬度<br><br>
       <span class='et-top et-arrow'>
         &lt;------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
