@@ -3,5 +3,6 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 .idea
-img
+demo\img
+normalize.css
 node_modules

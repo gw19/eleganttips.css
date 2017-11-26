@@ -3,25 +3,32 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='x-ua-compatible' content='ie=edge'>
-  <title>Demo</title>
-  <meta name='description' content='demo'>
+  <title>Elegant Tip 範例</title>
+  <meta name='description' content='Elegant Tip 範例網頁，提供簡單優雅的提示訊息（tooltip）（純 CSS）'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <meta name='author' content='GW19'>
   <link rel='stylesheet' href='demo.css'>
-  <link rel='stylesheet' href='eleganttip.css'>
-  <script src='https://use.fontawesome.com/1e5f593df3.js'></script>
+  <link rel='stylesheet' href='../eleganttip.css'>
 </head>
 <body>
 
 <nav class='nav'>
-  <div class='nav-content'>Elegant Tip 範例
+  <div class='nav-content'>
+    <a class='et' href='/'>Elegant Tip 範例
+      <span class='et-bottom et-arrow' style='font-size: 26px;'><b>歡迎來試試 Elegant Tip</b></span>
+    </a>
     <a class='my-page' href='https://github.com/gw19' target='_blank'>
-      <i class='fa fa-github' aria-hidden='true'></i>
+      <span class='et'>
+        <img class='nav-logo' src='img/GitHub-Mark-120px-plus.png' width='50'/>
+        <span class='et-bottom et-arrow et-style-night' style='font-size: 20px'>
+          到 Github 瀏覽這個專案
+        </span>
+      </span>
     </a>
   </div>
 </nav>
 <div class='container'>
-  <p style='color: #E64945'>＊ 請將滑鼠指到下列各按鈕上以看範例</p>
+  <p style='color: #E64945; font-size: 18px;'>＊ 請將滑鼠指到下列各按鈕上以看範例</p>
 
   <!--  方位  -->
 
@@ -67,7 +74,7 @@
   <span class='title'>樣式<span>（選擇性加入子元素 &lt;span&gt; 的 class）</span>：<br></span>
   <div class='sec3'>
 
-    <button type='submit' class='btn et'>預設樣式<br><br>
+    <button type='submit' class='btn et'>預設樣式<br>
       <span class='et-top et-arrow'>
       <span style='color: #E64945; font: 18px bold;'>白居易 &lt;琵琶行&gt;</span>
       <br><br>
@@ -103,7 +110,7 @@
 
     <button type='submit' class='btn et'>警告樣式<br>et-style-warn
       <span class='et-left-top et-arrow et-style-warn'>
-        <span style='float: left; text-align: center'><img src='img/warning.png' width='15%'/></span>
+        <span style='float: left; text-align: center'><img src='img/example_style_warn.png' width='15%'/></span>
         警告！兒童樂園只准許15歲以下的孩子遊玩，<br>
           你可以陪他們進去，但是不准玩遊樂設施！
       </span>
@@ -114,15 +121,15 @@
   <!--  箭頭  -->
 
   <span class='title'>箭頭
-    <span>（預設為<u>沒有箭頭</u>，想要箭頭請將 et-arrow 加入 &lt;span&gt; 的 class）</span>：<br>
+    <span>（預設為<strong><u>沒有箭頭</u></strong>，想要箭頭請將 et-arrow 加入 &lt;span&gt; 的 class）</span>：<br>
   </span>
   <div class='sec4'>
 
-    <button type='submit' class='btn et'>有箭頭的訊息
+    <button type='submit' class='btn et'>有箭頭的訊息<br>et-arrow
       <span class='et-top et-arrow'>預設為<strong>沒有箭頭</strong>，想要箭頭嗎？<br>請將 et-arrow 加入 class！</span>
     </button>
 
-    <button class='btn et'>預設都是沒有箭頭的訊息
+    <button class='btn et'>預設都是沒有箭頭的訊息<br>
       <span class='et-top et-style-night'>
       <span style='color: #00e584; font: 18px bold;'>國不應同出的</span>
       <br><br>
@@ -152,7 +159,7 @@
       重複一次，這個寬度有 660px 哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦</span>
     </button>
 
-    <button type='submit' class='btn et'>預設的寬度<br><br>
+    <button type='submit' class='btn et'>預設的寬度<br>
       <span class='et-top et-arrow'>
         &lt;------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -162,6 +169,11 @@
       </span>
     </button>
   </div>
+
+  <br>
+  <p style='color: #E64945; font-size: 18px;'>＊ 詳細使用說明與檔案下載請至此專案的
+    <a href='https://github.com/gw19'>Github 頁面</a> 查看。
+  </p>
 
 </div>
 
