@@ -13,7 +13,7 @@ or
 ```
 ## Usage
 ### The easiest way
-Adding the class `'et'` in the tag of element in which you want to display the tips on.<br>
+Adding the class `et` in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on your button,<br>
 ```html
 <button class='et'>hover me!</button>
@@ -34,8 +34,8 @@ and write messages into `<span>`, e.g.
 ```
 it will show you the message "Here you are!" on the top of the button.
 
-**Note that class `'et'` is necessary in the parent element,<br>
-and one of the orientation classes like `'et-top'` is necessary in the child element `<span>`.**
+**Note that class `et` is necessary in the parent element,<br>
+and one of the orientation classes like `et-top` is necessary in the child element `<span>`.**
 <br>
 <br>
 ### Other options
