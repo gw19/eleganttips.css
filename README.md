@@ -11,15 +11,23 @@ or
 ```html
 <link rel='stylesheet' href='eleganttip.min.css'>
 ```
-<br>
-<br>
 ## Usage
 Adding the class "et" in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on a button,<br>
+```html
+<button type='submit' class='btn et'>hover me</button>
+```
+then adding tag <span> with choosing one of the following class:
+* et-bottom
+* et-top
+* et-left
+* et-right
+and write messages into <span>, e.g.
 ```html
 <button type='submit' class='btn et'>hover me
   <span class='et-top'>
     here you are!
   </span>
 </button>
-```
+  ```
+  
