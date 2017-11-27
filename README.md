@@ -13,7 +13,7 @@ or
 ```
 ## Usage
 ### The easiest way
-Adding the class `et` in the tag of element in which you want to display the tips on.<br>
+Adding the class &nbsp;`et`&nbsp; in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on your button,<br>
 ```html
 <button class='et'>hover me!</button>
