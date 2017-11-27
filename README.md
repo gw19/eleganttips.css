@@ -16,7 +16,7 @@ or
 Adding the class "et" in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on your button,<br>
 ```html
-<button class='et'>hover me</button>
+<button class='et'>hover me!</button>
 ```
 then creating a child element ```<span>``` with adding one of the following orientation in its class:
 * et-bottom
