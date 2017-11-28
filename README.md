@@ -18,7 +18,7 @@ E.g. if you want to show the tips message on your button,<br>
 ```html
 <button class='et'>hover me!</button>
 ```
-then creating a child element `<span>` with adding one of the following orientation in its class:
+then creating a child element `<span>` with adding one of the following position in its class:
 * et-bottom
 * et-top
 * et-left
@@ -35,7 +35,7 @@ and write messages into `<span>`, e.g.
 it will show you the message "Here you are!" on the top of the button.
 
 **Note that the class &nbsp;`et`&nbsp; is necessary in the parent element,<br>
-and one of the orientation classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
+and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
 <br>
 <br>
 ### Other options
