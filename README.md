@@ -47,25 +47,37 @@ and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the ch
 <br>
 ### Other options
 Now you can have other features and styles by adding more classes <b>in your child element tag `<span>`</b>.
+  
 #### Arrows
 ```html
-<span class='et-top et-arrow'>
+<span class='et-top et-arrow'>Here you are!</span>
 ```
+![example_readme_usage1](examples/img/example_readme_usage2.png)
+<br>
+<br>
 #### Styles
 ```html
-<span class='et-top et-arrow et-style-night'>
+<span class='et-top et-arrow et-style-night'>......</span>
 ```
+  
+![example_readme_usage1](examples/img/example_readme_usage3.png)
+<br>
+<br>
 ```html
-<span class='et-top et-arrow et-style-warn'>
+<span class='et-top et-arrow et-style-warn'>......</span>
 ```
+
+![example_readme_usage1](examples/img/example_readme_usage4.png)
+<br>
+<br>
 #### Width of tips block
 ```html
-<span class='et-top et-narrow'>
+<span class='et-top et-narrow'>......</span>
 ```
 ```html
-<span class='et-top et-wide'>
+<span class='et-top et-wide'>......</span>
 ```
 #### Combination
 ```html
-<span class='et-left et-arrow et-style-night et-wide'>
+<span class='et-left et-arrow et-style-night et-wide'>......</span>
 ```
