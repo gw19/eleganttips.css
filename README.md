@@ -1,7 +1,10 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)
 Provide a simple and elegant tips message (tooltips) on your element with pure CSS.
-<br>
-<br>
+
+<p align='center'>
+<img src='https://github.com/gw19/eleganttip.css/blob/master/examples/zh-tw/img/example_readme_title.png?raw=true' width='660' alt='example_readme_title' align=center />
+</p>
+
 ## Installation
 Including `eleganttip.css` or `eleganttip.min.css` in your html file.<br>
 ```html
@@ -18,7 +21,7 @@ E.g. if you want to show the tips message on your button,<br>
 ```html
 <button class='et'>hover me!</button>
 ```
-then creating a child element `<span>` with adding one of the following orientation in its class:
+then creating a child element `<span>` with adding one of the following position in its class:
 * et-bottom
 * et-top
 * et-left
@@ -35,7 +38,7 @@ and write messages into `<span>`, e.g.
 it will show you the message "Here you are!" on the top of the button.
 
 **Note that the class &nbsp;`et`&nbsp; is necessary in the parent element,<br>
-and one of the orientation classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
+and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
 <br>
 <br>
 ### Other options
