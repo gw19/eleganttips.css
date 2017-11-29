@@ -50,7 +50,7 @@ Now you can have other features and styles by adding more classes <b>in your chi
   
 #### Arrows
 ```html
-<span class='et-top et-arrow'>......</span>
+<span class='et-top et-arrow'>Here you are!</span>
 ```
 ![example_readme_usage1](examples/img/example_readme_usage2.png)
 <br>
