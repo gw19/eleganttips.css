@@ -2,7 +2,7 @@
 Provide a simple and elegant tips message (tooltips) on your element with pure CSS.
 
 <p align='center'>
-<img src='/examples/zh-tw/img/example_readme_title.png' align=center width='660'>
+<img src='./examples/zh-tw/img/example_readme_title.png' align=center width='660' />
 </p>
 
 ## Installation
