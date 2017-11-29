@@ -1,7 +1,7 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)
 Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)
 
-![example_readme_title](examples/img/example_readme_title.png)
+![example_readme_title](examples/en-us/img/example_readme_title.png)
 
 ## Installation
 Including `eleganttip.css` or `eleganttip.min.css` in your html file.<br>
@@ -39,7 +39,7 @@ and write messages into `<span>`, e.g.
 ```
 it will show you the message "Here you are!" on the top of the button.
 
-![example_readme_usage1](examples/img/example_readme_usage1.png)
+![example_readme_usage1](examples/en-us/img/example_readme_usage1.png)
 
 **Note that the class &nbsp;`et`&nbsp; is necessary in the parent element,<br>
 and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
@@ -52,7 +52,7 @@ Now you can have other features and styles by adding more classes <b>in your chi
 ```html
 <span class='et-top et-arrow'>Here you are!</span>
 ```
-![example_readme_usage1](examples/img/example_readme_usage2.png)
+![example_readme_usage1](examples/en-us/img/example_readme_usage2.png)
 <br>
 <br>
 #### Styles
@@ -60,14 +60,14 @@ Now you can have other features and styles by adding more classes <b>in your chi
 <span class='et-top et-arrow et-style-night'>......</span>
 ```
   
-![example_readme_usage1](examples/img/example_readme_usage3.png)
+![example_readme_usage1](examples/en-us/img/example_readme_usage3.png)
 <br>
 <br>
 ```html
 <span class='et-top et-arrow et-style-warn'>......</span>
 ```
 
-![example_readme_usage1](examples/img/example_readme_usage4.png)
+![example_readme_usage1](examples/en-us/img/example_readme_usage4.png)
 <br>
 <br>
 #### Width of tips block
