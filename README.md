@@ -8,11 +8,11 @@ Provide a simple and elegant tips message (tooltips) on your element with pure C
 ## Installation
 Including `eleganttip.css` or `eleganttip.min.css` in your html file.<br>
 ```html
-<link rel='stylesheet' href='eleganttip.css'>
+<link rel='stylesheet' href='eleganttips.css'>
 ```
 or
 ```html
-<link rel='stylesheet' href='eleganttip.min.css'>
+<link rel='stylesheet' href='eleganttips.min.css'>
 ```
 ## Usage
 ### The easiest way
