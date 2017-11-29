@@ -15,7 +15,7 @@ or
 <link rel='stylesheet' href='eleganttips.min.css'>
 ```
 ## Usage
-### The easiest way
+### Basic usage
 Adding the class &nbsp;`et`&nbsp; in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on your button,<br>
 ```html
@@ -42,7 +42,7 @@ and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the ch
 <br>
 <br>
 ### Other options
-Now you can have other features and styles by adding more classes in your element tag.
+Now you can have other features and styles by adding more classes in your child element tag `<span>`.
 #### Arrows
 ```html
 <span class='et-top et-arrow'>
