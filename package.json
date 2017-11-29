@@ -10,6 +10,6 @@
     "express": "^4.16.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node examples/en-us/server.js"
   }
 }
