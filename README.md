@@ -2,7 +2,7 @@
 Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)
 
 <p align='center'>
-<img src='examples/zh-tw/img/example_readme_title.png' align=center width='660'>
+<img src='examples/zh-tw/img/example_readme_title2.png' align=center width='660'>
 </p>
 
 ## Installation
