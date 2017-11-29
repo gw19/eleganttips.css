@@ -1,5 +1,5 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)
-Provide a simple and elegant tips message (tooltips) on your element with pure CSS.
+Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus (pure CSS). 
 
 <p align='center'>
 <img src='./examples/zh-tw/img/example_readme_title.png' align=center width='660' />
