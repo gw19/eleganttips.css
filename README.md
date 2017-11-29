@@ -24,6 +24,10 @@ then creating a child element `<span>` with adding one of the following position
 * et-top
 * et-left
 * et-right
+* et-left-bottom
+* et-left-top
+* et-right-bottom
+* et-right-top
   
 and write messages into `<span>`, e.g.
 ```html
@@ -34,6 +38,8 @@ and write messages into `<span>`, e.g.
 </button>
 ```
 it will show you the message "Here you are!" on the top of the button.
+
+![example_readme_usage1](examples/img/example_readme_usage1.png)
 
 **Note that the class &nbsp;`et`&nbsp; is necessary in the parent element,<br>
 and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
