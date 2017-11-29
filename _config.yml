@@ -1,5 +1,5 @@
 title: eleganttip.css
-description: Provide a simple and elegant tips message (tooltips) on your element with pure CSS. 
+description: Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-tactile

@@ -1,25 +1,23 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)
-Provide a simple and elegant tips message (tooltips) on your element with pure CSS.
+Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)
 
-<p align='center'>
-<img src='https://github.com/gw19/eleganttip.css/blob/master/examples/zh-tw/img/example_readme_title.png?raw=true' width='660' alt='example_readme_title' align=center />
-</p>
+![example_readme_title](examples/zh-tw/img/example_readme_title.png)
 
 ## Installation
 Including `eleganttip.css` or `eleganttip.min.css` in your html file.<br>
 ```html
-<link rel='stylesheet' href='eleganttip.css'>
+<link rel='stylesheet' href='eleganttips.css'>
 ```
 or
 ```html
-<link rel='stylesheet' href='eleganttip.min.css'>
+<link rel='stylesheet' href='eleganttips.min.css'>
 ```
 ## Usage
-### The easiest way
+### Basic usage
 Adding the class &nbsp;`et`&nbsp; in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on your button,<br>
 ```html
-<button class='et'>hover me!</button>
+<button class='et'>Hover me!</button>
 ```
 then creating a child element `<span>` with adding one of the following position in its class:
 * et-bottom
@@ -42,7 +40,7 @@ and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the ch
 <br>
 <br>
 ### Other options
-Now you can have other features and styles by adding more classes in your element tag.
+Now you can have other features and styles by adding more classes <b>in your child element tag `<span>`</b>.
 #### Arrows
 ```html
 <span class='et-top et-arrow'>
