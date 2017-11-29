@@ -19,7 +19,7 @@ or
 Adding the class &nbsp;`et`&nbsp; in the tag of element in which you want to display the tips on.<br>
 E.g. if you want to show the tips message on your button,<br>
 ```html
-<button class='et'>hover me!</button>
+<button class='et'>Hover me!</button>
 ```
 then creating a child element `<span>` with adding one of the following position in its class:
 * et-bottom
