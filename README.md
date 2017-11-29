@@ -42,7 +42,7 @@ and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the ch
 <br>
 <br>
 ### Other options
-Now you can have other features and styles by adding more classes in your child element tag `<span>`.
+Now you can have other features and styles by adding more classes <b>in your child element tag `<span>`</b>.
 #### Arrows
 ```html
 <span class='et-top et-arrow'>
