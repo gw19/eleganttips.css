@@ -1,0 +1,503 @@
+/**
+ *  Elegant Tip v1.1.2
+ *  Copyright (c) 2017 Guan-Wen CHEN  <imgw19@gmail.com>
+ *
+ *  A simple and elegant tooltip with pure CSS implementation.
+ *
+ *  * Usage *
+ *
+ *  [Necessary]
+ *  Classes added into tag:
+ *      et: the tag you want to show elegant tip.
+ *
+ *  (e.g. <button class='et'>...</button>)
+ *
+ *  Then create <span></span> inside the tag which has class 'et',
+ *  (e.g. <button class='et'>...<span>..</span></button>),
+ *   and one of the following tag is necessary to added in <span> tag,
+ *
+ *      et-bottom: show tooltip on bottom,
+ *      et-top,
+ *      et-left,
+ *      et-right,
+ *      et-left-bottom,
+ *      et-left-top,
+ *      et-right-bottom,
+ *      et-right-top
+ *
+ *  (e.g. <button class='et'>...<span class='et-top'>..</span></button>,
+ *   will show tooltip on top of button.)
+ *
+ *  [optional]
+ *  1. arrow:
+ *      et-arrow: show arrow of tooltip
+ *
+ *  (e.g. <button class='et'>...<span class='et-top et-arrow'>..</span></button>)
+ *
+ *  2. other styles:
+ *      et-style-night
+ *      et-style-warn
+ *
+ *  (e.g. <button class='et'>...<span class='et-top et-arrow et-style-night'>..</span></button>)
+ *
+ *  3. tooltip block width:
+ *      et-narrow: make tooltip block narrow (used in mobile)
+ *      et-wide: make tooltip block narrow
+ *
+ *  (e.g. <button class='et'>...
+ *          <span class='et-top et-arrow et-style-night et-narrow'>
+ *            ......
+ *          </span>
+ *        </button>
+ *  )
+ */
+
+:root {
+  --iron-black: #454545;
+
+  --white: #fffff2;
+  --yellow: #fff795;
+  --light-yellow: #ffffe1; /* lightgoldenrodyellow */
+
+  --red: #e62b27;
+  --light-red: #E64945;
+  --dark-red: #bd0000;
+
+  --blue: #145b9b;
+  --light-blue: #367abd;
+  --dark-blue: #234990;
+  --night-blue: #242d42;
+
+  --orange: #F0A32F;
+  --dark-orange: #EB7B2D;
+
+  --max-width: 400px;
+  --max-width-small: 260px;
+  --max-width-large: 660px;
+
+  --border-thickness: 2px;
+  --font-size: 16px;
+  --arrow-size-large: 12px;
+  --arrow-size-small: 8px;
+  /*  Increase pointer-events successful area  */
+  --pointer-event-area: calc(var(--arrow-size-large) * 2.5)
+}
+/* Avoid exceeding the boundaries */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.et {
+  display: inline;
+  position: relative;
+}
+
+/* ==========================================================================
+   Increase pointer-events successful area
+   ========================================================================== */
+.et::after {
+  /*background-color: black;  !* only when testing *!*/
+  content: '';
+  cursor: inherit;
+  min-height: calc(100% + var(--pointer-event-area));
+  min-width: calc(100% + var(--pointer-event-area));
+  pointer-events: none;
+  position: absolute;
+  top: calc(var(--pointer-event-area) * -0.5);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.et:hover::after,
+.et:focus::after {
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   Common attributes for all tip-block
+   ========================================================================== */
+.et .et-bottom,
+.et .et-top,
+.et .et-left,
+.et .et-right,
+.et .et-left-top,
+.et .et-right-top,
+.et .et-left-bottom,
+.et .et-right-bottom {
+  display: inline-block;
+  background-color: var(--light-yellow);
+  border: var(--border-thickness) solid var(--light-blue);
+  border-radius: 6px;
+  color: var(--iron-black);
+  cursor: default;
+  font-size: var(--font-size);
+  font-weight: 500;
+  height: auto;
+  max-width: var(--max-width);
+  padding: 5px 8px;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;  /* comment only when testing */
+  z-index: 999999;
+}
+
+/* ==========================================================================
+   Common attributes for all tip-arrow
+   ========================================================================== */
+.et .et-arrow::after {
+  border: var(--arrow-size-large) solid transparent;
+  content: '';
+  pointer-events: auto;
+  position: absolute;
+  z-index: 999999;
+}
+.et .et-arrow::before {
+  border: calc(var(--arrow-size-large) + var(--border-thickness) + 2px) solid transparent;
+  content: '';
+  pointer-events: auto;
+  position: absolute;
+  z-index: 999999;
+}
+.et .et-left.et-arrow::after,
+.et .et-right.et-arrow::after {
+  border: var(--arrow-size-small) solid transparent;
+}
+.et .et-left.et-arrow::before,
+.et .et-right.et-arrow::before {
+  border: calc(var(--arrow-size-small) + var(--border-thickness) + 2px) solid transparent;
+}
+
+/* ==========================================================================
+   Bottom tip-block
+   ========================================================================== */
+.et .et-bottom {
+  margin: 10px calc(var(--max-width) * -1) 0 0;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-bottom.et-arrow::after {
+  border-bottom-color: var(--light-yellow);
+  bottom: 100%;
+  left: 50%;
+  margin-left: calc(var(--arrow-size-large) * (-1));
+}
+.et .et-bottom.et-arrow::before {
+  border-bottom-color: var(--light-blue);
+  bottom: 100%;
+  left: 50%;
+  margin-left: calc((var(--arrow-size-large) * (-1)) - (var(--border-thickness) + 2px));
+}
+
+/* ==========================================================================
+   Top tip-block
+   ========================================================================== */
+.et .et-top {
+  margin: 0 calc(var(--max-width) * -1) 10px 0;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-top.et-arrow::after {
+  border-top-color: var(--light-yellow);
+  top: 100%;
+  left: 50%;
+  margin-left: calc(var(--arrow-size-large) * (-1));
+}
+.et .et-top.et-arrow::before {
+  border-top-color: var(--light-blue);
+  top: 100%;
+  left: 50%;
+  margin-left: calc((var(--arrow-size-large) * (-1)) - (var(--border-thickness) + 2px));
+}
+
+/* ==========================================================================
+   Left tip-block
+   ========================================================================== */
+.et .et-left {
+  margin: 0 10px 0 calc(var(--max-width) * -1);
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-left.et-arrow::after {
+  border-left-color: var(--light-yellow);
+  top: 50%;
+  left: 100%;
+  margin-top: calc(var(--arrow-size-small) * (-1));
+}
+.et .et-left.et-arrow::before {
+  border-left-color: var(--light-blue);
+  top: 50%;
+  left: 100%;
+  margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));
+}
+
+/* ==========================================================================
+   Right tip-block
+   ========================================================================== */
+.et .et-right {
+  margin: 0 calc(var(--max-width) * -1) 0 10px;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-right.et-arrow::after {
+  border-right-color: var(--light-yellow);
+  top: 50%;
+  right: 100%;
+  margin-top: calc(var(--arrow-size-small) * (-1));
+}
+.et .et-right.et-arrow::before {
+  border-right-color: var(--light-blue);
+  top: 50%;
+  right: 100%;
+  margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));
+}
+
+/* ==========================================================================
+   Left-top tip-block
+   ========================================================================== */
+.et .et-left-top {
+  margin: 0 0 0 calc(var(--max-width) * -1);
+  bottom: 100%;
+  right: 100%;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-left-top.et-arrow::after {
+  border-radius: 6px;
+  border-right: 12px solid var(--yellow);
+  top: calc(100% - 2px);
+  left: calc(100% - 10px);
+  margin-top: calc(var(--arrow-size-small) * (-1));
+  transform: rotate(45deg);
+}
+
+/* ==========================================================================
+   Right-top tip-block
+   ========================================================================== */
+.et .et-right-top {
+  margin: 0 calc(var(--max-width) * -1) 0 0;
+  bottom: 100%;
+  left: 100%;
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-right-top.et-arrow::after {
+  border-radius: 6px;
+  border-left: 12px solid var(--yellow);
+  top: calc(100% - 18px);
+  right: calc(100% - 10px);
+  margin-top: var(--arrow-size-small);
+  transform: rotate(-45deg);
+}
+
+/* ==========================================================================
+   Left-bottom tip-block
+   ========================================================================== */
+.et .et-left-bottom {
+  margin: 0 0 0 calc(var(--max-width) * -1);
+  top: 100%;
+  right: 100%;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-left-bottom.et-arrow::after {
+  border-radius: 6px;
+  border-right: 12px solid var(--yellow);
+  bottom: calc(100% - 10px);
+  left: calc(100% - 10px);
+  margin-top: var(--arrow-size-small);
+  transform: rotate(-45deg);
+}
+
+/* ==========================================================================
+   Right-bottom tip-block
+   ========================================================================== */
+.et .et-right-bottom {
+  margin: 0 calc(var(--max-width) * -1) 0 0;
+  top: 100%;
+  left: 100%;
+  filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+.et .et-right-bottom.et-arrow::after {
+  border-radius: 6px;
+  border-left: 12px solid var(--yellow);
+  bottom: calc(100% - 10px);
+  right: calc(100% - 10px);
+  margin-top: var(--arrow-size-small);
+  transform: rotate(45deg);
+}
+
+/* ==========================================================================
+   .et hover & focus events
+   ========================================================================== */
+.et:hover .et-bottom,
+.et:focus .et-bottom {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 6px);
+  -webkit-transform: translate(-50%, 6px);
+}
+.et:hover .et-top,
+.et:focus .et-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -6px);
+  -webkit-transform: translate(-50%, -6px);
+}
+.et:hover .et-left,
+.et:focus .et-left {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-6px, -50%);
+  -webkit-transform: translate(-6px, -50%);
+}
+.et:hover .et-right,
+.et:focus .et-right {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(6px, -50%);
+  -webkit-transform: translate(6px, -50%);
+}
+.et:hover .et-left-top,
+.et:focus .et-left-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-10px, -10px);
+  -webkit-transform: translate(-10px, -10px);
+}
+.et:hover .et-right-top,
+.et:focus .et-right-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(10px, -10px);
+  -webkit-transform: translate(10px, -10px);
+}
+.et:hover .et-left-bottom,
+.et:focus .et-left-bottom {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-10px, 10px);
+  -webkit-transform: translate(-10px, 10px);
+}
+.et:hover .et-right-bottom,
+.et:focus .et-right-bottom {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(10px, 10px);
+  -webkit-transform: translate(10px, 10px);
+}
+
+/* ==========================================================================
+   Different styles, design your style here.
+   ========================================================================== */
+/*  ------ Night style ------  */
+.et .et-style-night {
+  background-color: var(--night-blue);
+  border: 0;
+  border-radius: 0;
+  color: var(--yellow);
+  filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  padding: 10px 20px;
+  transition: opacity 0.5s, transform 0.5s;
+  -webkit-transition: opacity 0.5s, transform 0.5s;
+}
+.et .et-bottom.et-style-night:after,
+.et .et-bottom.et-style-night:before {
+  border-bottom-color: var(--night-blue);
+}
+.et .et-top.et-style-night:after,
+.et .et-top.et-style-night:before {
+  border-top-color: var(--night-blue);
+}
+.et .et-left.et-style-night:after,
+.et .et-left.et-style-night:before {
+  border-left-color: var(--night-blue);
+}
+.et .et-right.et-style-night:after,
+.et .et-right.et-style-night:before {
+  border-right-color: var(--night-blue);
+}
+.et .et-left-bottom.et-style-night:after,
+.et .et-left-top.et-style-night:after {
+  border-right-color: var(--iron-black);
+}
+.et .et-right-bottom.et-style-night:after,
+.et .et-right-top.et-style-night:after {
+  border-left-color: var(--iron-black);
+}
+
+/*  ------ Warning style ------  */
+.et .et-style-warn {
+  background-color: var(--light-red);
+  border: 2px solid var(--yellow);
+  border-radius: 0;
+  color: var(--white);
+  filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
+  padding: 10px 20px;
+  transition: opacity 0.1s, transform 0.5s;
+  -webkit-transition: opacity 0.1s, transform 0.5s;
+}
+.et .et-bottom.et-style-warn:after {
+  border-bottom-color: var(--light-red);
+}
+.et .et-bottom.et-style-warn:before {
+  border-bottom-color: var(--yellow);
+}
+.et .et-top.et-style-warn:after {
+  border-top-color: var(--light-red);
+}
+.et .et-top.et-style-warn:before {
+  border-top-color: var(--yellow);
+}
+.et .et-left.et-style-warn:after {
+  border-left-color: var(--light-red);
+}
+.et .et-left.et-style-warn:before {
+  border-left-color: var(--yellow);
+}
+.et .et-right.et-style-warn:after {
+  border-right-color: var(--light-red);
+}
+.et .et-right.et-style-warn:before {
+  border-right-color: var(--yellow);
+}
+.et .et-left-bottom.et-style-warn:after,
+.et .et-left-top.et-style-warn:after {
+  border-right-color: var(--red);
+}
+.et .et-right-bottom.et-style-warn:after,
+.et .et-right-top.et-style-warn:after {
+  border-left-color: var(--red);
+}
+
+/* ==========================================================================
+   Tip block max-width definition
+   ========================================================================== */
+.et .et-narrow {
+  max-width: var(--max-width-small); !important;
+}
+.et .et-wide {
+  max-width: var(--max-width-large); !important;
+}
