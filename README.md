@@ -1,10 +1,11 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)
-Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)
+Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)<br>
+Here is the <a href='https://eleganttips.herokuapp.com/' target='_blank'>example page</a>.
 
 ![example_readme_title](examples/en-us/img/example_readme_title.png)
 
 ## Installation
-Including `eleganttip.css` or `eleganttip.min.css` in your html file.<br>
+Including `eleganttips.css` or `eleganttips.min.css` in your html file.<br>
 ```html
 <link rel='stylesheet' href='eleganttips.css'>
 ```
@@ -15,9 +16,9 @@ or
 ## Usage
 ### Basic usage
 Adding the class &nbsp;`et`&nbsp; in the tag of element in which you want to display the tips on.<br>
-E.g. if you want to show the tips message on your `div`,<br>
+E.g. if you want to show the tips message on your `<button>`,<br>
 ```html
-<div class='et'>Hover me!</div>
+<button class='et'>Hover me!</button>
 ```
 then creating a child element `<span>` with adding one of the following position in its class:
 * et-bottom
@@ -31,13 +32,13 @@ then creating a child element `<span>` with adding one of the following position
 
 and write messages into `<span>`, e.g.
 ```html
-<div class='et'>Hover me!
+<button class='et'>Hover me!
   <span class='et-top'>
     Here you are!
   </span>
-</div>
+</button>
 ```
-it will show you the message "Here you are!" on the top of the `div`.
+it will show you the message "Here you are!" on the top of the `<button>`.
 
 ![example_readme_usage1](examples/en-us/img/example_readme_usage1.png)
 
