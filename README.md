@@ -1,6 +1,6 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)
 Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)<br>
-Example page: https://eleganttips.herokuapp.com/
+<a href='https://eleganttips.herokuapp.com/' target='_blank'>Example page</a>
 
 ![example_readme_title](examples/en-us/img/example_readme_title.png)
 
