@@ -5,7 +5,7 @@ Here is the <a href='https://eleganttips.herokuapp.com/' target='_blank'>example
 ![example_readme_title](examples/en-us/img/example_readme_title.png)
 
 ## Installation
-Including `eleganttip.css` or `eleganttip.min.css` in your html file.<br>
+Including `eleganttips.css` or `eleganttips.min.css` in your html file.<br>
 ```html
 <link rel='stylesheet' href='eleganttips.css'>
 ```
