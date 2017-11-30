@@ -31,11 +31,11 @@ then creating a child element `<span>` with adding one of the following position
 
 and write messages into `<span>`, e.g.
 ```html
-<div class='et'>Hover me!
+<button class='et'>Hover me!
   <span class='et-top'>
     Here you are!
   </span>
-</div>
+</button>
 ```
 it will show you the message "Here you are!" on the top of the `<button>`.
 
