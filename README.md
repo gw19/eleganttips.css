@@ -49,6 +49,7 @@ and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the ch
 Now you can have other features and styles by adding more classes <b>in your child element tag `<span>`</b>.
   
 #### Arrows
+By default, there is no arrow. If you want an arrow, add 'et-arrow' to class in <span>.
 ```html
 <span class='et-top et-arrow'>Here you are!</span>
 ```
@@ -56,6 +57,9 @@ Now you can have other features and styles by adding more classes <b>in your chi
 <br>
 <br>
 #### Styles
+Select one of following classes to include into child element `<span>` if you want a different block style.
+* et-style-night
+* et-style-warn
 ```html
 <span class='et-top et-arrow et-style-night'>......</span>
 ```
@@ -71,6 +75,9 @@ Now you can have other features and styles by adding more classes <b>in your chi
 <br>
 <br>
 #### Width of tips block
+Select one of following classes to include into child element `<span>` if you need another size of block.
+* et-narrow
+* et-wide
 ```html
 <span class='et-top et-narrow'>......</span>
 ```
@@ -81,3 +88,6 @@ Now you can have other features and styles by adding more classes <b>in your chi
 ```html
 <span class='et-left et-arrow et-style-night et-wide'>......</span>
 ```
+
+## License
+MIT license.
