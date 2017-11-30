@@ -50,7 +50,7 @@ and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the ch
 Now you can have other features and styles by adding more classes <b>in your child element tag `<span>`</b>.
   
 #### Arrows
-By default, there is no arrow. If you want an arrow, add 'et-arrow' to class in <span>.
+By default, there is no arrow. If you want an arrow, add 'et-arrow' to class in `<span>`.
 ```html
 <span class='et-top et-arrow'>Here you are!</span>
 ```
