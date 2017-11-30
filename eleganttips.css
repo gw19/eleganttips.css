@@ -52,41 +52,9 @@
  *  )
  */
 
-:root {
-  --iron-black: #454545;
-
-  --white: #fffff2;
-  --yellow: #fff795;
-  --light-yellow: #ffffe1; /* lightgoldenrodyellow */
-
-  --red: #e62b27;
-  --light-red: #E64945;
-  --dark-red: #bd0000;
-
-  --blue: #145b9b;
-  --light-blue: #367abd;
-  --dark-blue: #234990;
-  --night-blue: #242d42;
-
-  --orange: #F0A32F;
-  --dark-orange: #EB7B2D;
-
-  --max-width: 400px;
-  --max-width-small: 260px;
-  --max-width-large: 660px;
-
-  --border-thickness: 2px;
-  --font-size: 16px;
-  --arrow-size-large: 12px;
-  --arrow-size-small: 8px;
-  /*  Increase pointer-events successful area  */
-  --pointer-event-area: calc(var(--arrow-size-large) * 2.5)
-}
 /* Avoid exceeding the boundaries */
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .et {
   display: inline;
@@ -100,14 +68,13 @@
   /*background-color: black;  !* only when testing *!*/
   content: '';
   cursor: inherit;
-  min-height: calc(100% + var(--pointer-event-area));
-  min-width: calc(100% + var(--pointer-event-area));
+  min-height: calc(100% + 30px);
+  min-width: calc(100% + 30px);
   pointer-events: none;
   position: absolute;
-  top: calc(var(--pointer-event-area) * -0.5);
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
 }
 .et:hover::after,
 .et:focus::after {
@@ -126,21 +93,20 @@
 .et .et-left-bottom,
 .et .et-right-bottom {
   display: inline-block;
-  background-color: var(--light-yellow);
-  border: var(--border-thickness) solid var(--light-blue);
+  background-color: #ffffe1;
+  border: 2px solid #367abd;
   border-radius: 6px;
-  color: var(--iron-black);
+  color: #454545;
   cursor: default;
-  font-size: var(--font-size);
+  font-size: 16px;
   font-weight: 500;
   height: auto;
-  max-width: var(--max-width);
+  max-width: 400px;
   padding: 5px 8px;
   pointer-events: none;
   position: absolute;
   text-align: left;
   transition: opacity 0.3s, transform 0.3s;
-  -webkit-transition: opacity 0.3s, transform 0.3s;
   opacity: 0;  /* comment only when testing */
   z-index: 999999;
 }
@@ -149,14 +115,14 @@
    Common attributes for all tip-arrow
    ========================================================================== */
 .et .et-arrow::after {
-  border: var(--arrow-size-large) solid transparent;
+  border: 12px solid transparent;
   content: '';
   pointer-events: auto;
   position: absolute;
   z-index: 999999;
 }
 .et .et-arrow::before {
-  border: calc(var(--arrow-size-large) + var(--border-thickness) + 2px) solid transparent;
+  border: 16px solid transparent;
   content: '';
   pointer-events: auto;
   position: absolute;
@@ -164,129 +130,120 @@
 }
 .et .et-left.et-arrow::after,
 .et .et-right.et-arrow::after {
-  border: var(--arrow-size-small) solid transparent;
+  border: 8px solid transparent;
 }
 .et .et-left.et-arrow::before,
 .et .et-right.et-arrow::before {
-  border: calc(var(--arrow-size-small) + var(--border-thickness) + 2px) solid transparent;
+  border: 12px solid transparent;
 }
 
 /* ==========================================================================
    Bottom tip-block
    ========================================================================== */
 .et .et-bottom {
-  margin: 10px calc(var(--max-width) * -1) 0 0;
+  margin: 10px -400px 0 0;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
   filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-bottom.et-arrow::after {
-  border-bottom-color: var(--light-yellow);
+  border-bottom-color: #ffffe1;
   bottom: 100%;
   left: 50%;
-  margin-left: calc(var(--arrow-size-large) * (-1));
+  margin-left: -12px;
 }
 .et .et-bottom.et-arrow::before {
-  border-bottom-color: var(--light-blue);
+  border-bottom-color: #367abd;
   bottom: 100%;
   left: 50%;
-  margin-left: calc((var(--arrow-size-large) * (-1)) - (var(--border-thickness) + 2px));
+  margin-left: -16px;
 }
 
 /* ==========================================================================
    Top tip-block
    ========================================================================== */
 .et .et-top {
-  margin: 0 calc(var(--max-width) * -1) 10px 0;
+  margin: 0 -400px 10px 0;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
   filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-top.et-arrow::after {
-  border-top-color: var(--light-yellow);
+  border-top-color: #ffffe1;
   top: 100%;
   left: 50%;
-  margin-left: calc(var(--arrow-size-large) * (-1));
+  margin-left: -12px;
 }
 .et .et-top.et-arrow::before {
-  border-top-color: var(--light-blue);
+  border-top-color: #367abd;
   top: 100%;
   left: 50%;
-  margin-left: calc((var(--arrow-size-large) * (-1)) - (var(--border-thickness) + 2px));
+  margin-left: -16px;
 }
 
 /* ==========================================================================
    Left tip-block
    ========================================================================== */
 .et .et-left {
-  margin: 0 10px 0 calc(var(--max-width) * -1);
+  margin: 0 10px 0 -400px;
   top: 50%;
   right: 100%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-left.et-arrow::after {
-  border-left-color: var(--light-yellow);
+  border-left-color: #ffffe1;
   top: 50%;
   left: 100%;
-  margin-top: calc(var(--arrow-size-small) * (-1));
+  margin-top: -8px;
 }
 .et .et-left.et-arrow::before {
-  border-left-color: var(--light-blue);
+  border-left-color: #367abd;
   top: 50%;
   left: 100%;
-  margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));
+  margin-top: -12px;
 }
 
 /* ==========================================================================
    Right tip-block
    ========================================================================== */
 .et .et-right {
-  margin: 0 calc(var(--max-width) * -1) 0 10px;
+  margin: 0 -400px 0 10px;
   top: 50%;
   left: 100%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-right.et-arrow::after {
-  border-right-color: var(--light-yellow);
+  border-right-color: #ffffe1;
   top: 50%;
   right: 100%;
-  margin-top: calc(var(--arrow-size-small) * (-1));
+  margin-top: -8px;
 }
 .et .et-right.et-arrow::before {
-  border-right-color: var(--light-blue);
+  border-right-color: #367abd;
   top: 50%;
   right: 100%;
-  margin-top: calc((var(--arrow-size-small) * (-1)) - (var(--border-thickness) + 2px));
+  margin-top: -12px;
 }
 
 /* ==========================================================================
    Left-top tip-block
    ========================================================================== */
 .et .et-left-top {
-  margin: 0 0 0 calc(var(--max-width) * -1);
+  margin: 0 0 0 -400px;
   bottom: 100%;
   right: 100%;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-left-top.et-arrow::after {
   border-radius: 6px;
-  border-right: 12px solid var(--yellow);
+  border-right: 12px solid #fff795;
   top: calc(100% - 2px);
   left: calc(100% - 10px);
-  margin-top: calc(var(--arrow-size-small) * (-1));
+  margin-top: -8px;
   transform: rotate(45deg);
 }
 
@@ -294,18 +251,17 @@
    Right-top tip-block
    ========================================================================== */
 .et .et-right-top {
-  margin: 0 calc(var(--max-width) * -1) 0 0;
+  margin: 0 -400px 0 0;
   bottom: 100%;
   left: 100%;
   filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-right-top.et-arrow::after {
   border-radius: 6px;
-  border-left: 12px solid var(--yellow);
+  border-left: 12px solid #fff795;
   top: calc(100% - 18px);
   right: calc(100% - 10px);
-  margin-top: var(--arrow-size-small);
+  margin-top: 8px;
   transform: rotate(-45deg);
 }
 
@@ -313,18 +269,17 @@
    Left-bottom tip-block
    ========================================================================== */
 .et .et-left-bottom {
-  margin: 0 0 0 calc(var(--max-width) * -1);
+  margin: 0 0 0 -400px;
   top: 100%;
   right: 100%;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-left-bottom.et-arrow::after {
   border-radius: 6px;
-  border-right: 12px solid var(--yellow);
+  border-right: 12px solid #fff795;
   bottom: calc(100% - 10px);
   left: calc(100% - 10px);
-  margin-top: var(--arrow-size-small);
+  margin-top: 8px;
   transform: rotate(-45deg);
 }
 
@@ -332,18 +287,17 @@
    Right-bottom tip-block
    ========================================================================== */
 .et .et-right-bottom {
-  margin: 0 calc(var(--max-width) * -1) 0 0;
+  margin: 0 -400px 0 0;
   top: 100%;
   left: 100%;
   filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-right-bottom.et-arrow::after {
   border-radius: 6px;
-  border-left: 12px solid var(--yellow);
+  border-left: 12px solid #fff795;
   bottom: calc(100% - 10px);
   right: calc(100% - 10px);
-  margin-top: var(--arrow-size-small);
+  margin-top: 8px;
   transform: rotate(45deg);
 }
 
@@ -355,56 +309,48 @@
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, 6px);
-  -webkit-transform: translate(-50%, 6px);
 }
 .et:hover .et-top,
 .et:focus .et-top {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -6px);
-  -webkit-transform: translate(-50%, -6px);
 }
 .et:hover .et-left,
 .et:focus .et-left {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-6px, -50%);
-  -webkit-transform: translate(-6px, -50%);
 }
 .et:hover .et-right,
 .et:focus .et-right {
   opacity: 1;
   pointer-events: auto;
   transform: translate(6px, -50%);
-  -webkit-transform: translate(6px, -50%);
 }
 .et:hover .et-left-top,
 .et:focus .et-left-top {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-10px, -10px);
-  -webkit-transform: translate(-10px, -10px);
 }
 .et:hover .et-right-top,
 .et:focus .et-right-top {
   opacity: 1;
   pointer-events: auto;
   transform: translate(10px, -10px);
-  -webkit-transform: translate(10px, -10px);
 }
 .et:hover .et-left-bottom,
 .et:focus .et-left-bottom {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-10px, 10px);
-  -webkit-transform: translate(-10px, 10px);
 }
 .et:hover .et-right-bottom,
 .et:focus .et-right-bottom {
   opacity: 1;
   pointer-events: auto;
   transform: translate(10px, 10px);
-  -webkit-transform: translate(10px, 10px);
 }
 
 /* ==========================================================================
@@ -412,92 +358,88 @@
    ========================================================================== */
 /*  ------ Night style ------  */
 .et .et-style-night {
-  background-color: var(--night-blue);
+  background-color: #242d42;
   border: 0;
   border-radius: 0;
-  color: var(--yellow);
+  color: #fff795;
   filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
   padding: 10px 20px;
   transition: opacity 0.5s, transform 0.5s;
-  -webkit-transition: opacity 0.5s, transform 0.5s;
 }
 .et .et-bottom.et-style-night:after,
 .et .et-bottom.et-style-night:before {
-  border-bottom-color: var(--night-blue);
+  border-bottom-color: #242d42;
 }
 .et .et-top.et-style-night:after,
 .et .et-top.et-style-night:before {
-  border-top-color: var(--night-blue);
+  border-top-color: #242d42;
 }
 .et .et-left.et-style-night:after,
 .et .et-left.et-style-night:before {
-  border-left-color: var(--night-blue);
+  border-left-color: #242d42;
 }
 .et .et-right.et-style-night:after,
 .et .et-right.et-style-night:before {
-  border-right-color: var(--night-blue);
+  border-right-color: #242d42;
 }
 .et .et-left-bottom.et-style-night:after,
 .et .et-left-top.et-style-night:after {
-  border-right-color: var(--iron-black);
+  border-right-color: #454545;
 }
 .et .et-right-bottom.et-style-night:after,
 .et .et-right-top.et-style-night:after {
-  border-left-color: var(--iron-black);
+  border-left-color: #454545;
 }
 
 /*  ------ Warning style ------  */
 .et .et-style-warn {
-  background-color: var(--light-red);
-  border: 2px solid var(--yellow);
+  background-color: #E64945;
+  border: 2px solid #fff795;
   border-radius: 0;
-  color: var(--white);
+  color: #fffff2;
   filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
-  -webkit-filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
   padding: 10px 20px;
   transition: opacity 0.1s, transform 0.5s;
-  -webkit-transition: opacity 0.1s, transform 0.5s;
 }
 .et .et-bottom.et-style-warn:after {
-  border-bottom-color: var(--light-red);
+  border-bottom-color: #E64945;
 }
 .et .et-bottom.et-style-warn:before {
-  border-bottom-color: var(--yellow);
+  border-bottom-color: #fff795;
 }
 .et .et-top.et-style-warn:after {
-  border-top-color: var(--light-red);
+  border-top-color: #E64945;
 }
 .et .et-top.et-style-warn:before {
-  border-top-color: var(--yellow);
+  border-top-color: #fff795;
 }
 .et .et-left.et-style-warn:after {
-  border-left-color: var(--light-red);
+  border-left-color: #E64945;
 }
 .et .et-left.et-style-warn:before {
-  border-left-color: var(--yellow);
+  border-left-color: #fff795;
 }
 .et .et-right.et-style-warn:after {
-  border-right-color: var(--light-red);
+  border-right-color: #E64945;
 }
 .et .et-right.et-style-warn:before {
-  border-right-color: var(--yellow);
+  border-right-color: #fff795;
 }
 .et .et-left-bottom.et-style-warn:after,
 .et .et-left-top.et-style-warn:after {
-  border-right-color: var(--red);
+  border-right-color: #e62b27;
 }
 .et .et-right-bottom.et-style-warn:after,
 .et .et-right-top.et-style-warn:after {
-  border-left-color: var(--red);
+  border-left-color: #e62b27;
 }
 
 /* ==========================================================================
    Tip block max-width definition
    ========================================================================== */
 .et .et-narrow {
-  max-width: var(--max-width-small); !important;
+  max-width: 260px;
 }
 .et .et-wide {
-  max-width: var(--max-width-large); !important;
+  max-width: 660px;
 }
