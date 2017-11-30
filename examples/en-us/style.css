@@ -24,6 +24,7 @@ h4,
 h5,
 h6,
 p,
+div,
 button,
 form {
   color: #454545;
@@ -106,11 +107,11 @@ a {
 .sec2 {
   margin-top: -30px;
 }
-.sec1 button,
-.sec2 button,
-.sec3 button,
-.sec4 button,
-.sec5 button {
+.sec1 div,
+.sec2 div,
+.sec3 div,
+.sec4 div,
+.sec5 div {
   width: 100%;
 }
 

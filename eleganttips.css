@@ -10,10 +10,10 @@
  *  Classes added into tag:
  *      et: the tag you want to show elegant tip.
  *
- *  (e.g. <button class='et'>...</button>)
+ *  (e.g. <div class='et'>...</div>)
  *
  *  Then create <span></span> inside the tag which has class 'et',
- *  (e.g. <button class='et'>...<span>..</span></button>),
+ *  (e.g. <div class='et'>...<span>..</span></div>),
  *   and one of the following tag is necessary to added in <span> tag,
  *
  *      et-bottom: show tooltip on bottom,
@@ -25,30 +25,30 @@
  *      et-right-bottom,
  *      et-right-top
  *
- *  (e.g. <button class='et'>...<span class='et-top'>..</span></button>,
- *   will show tooltip on top of button.)
+ *  (e.g. <div class='et'>...<span class='et-top'>..</span></div>,
+ *   will show tooltip on top of div.)
  *
  *  [optional]
  *  1. arrow:
  *      et-arrow: show arrow of tooltip
  *
- *  (e.g. <button class='et'>...<span class='et-top et-arrow'>..</span></button>)
+ *  (e.g. <div class='et'>...<span class='et-top et-arrow'>..</span></div>)
  *
  *  2. other styles:
  *      et-style-night
  *      et-style-warn
  *
- *  (e.g. <button class='et'>...<span class='et-top et-arrow et-style-night'>..</span></button>)
+ *  (e.g. <div class='et'>...<span class='et-top et-arrow et-style-night'>..</span></div>)
  *
  *  3. tooltip block width:
  *      et-narrow: make tooltip block narrow (used in mobile)
  *      et-wide: make tooltip block narrow
  *
- *  (e.g. <button class='et'>...
+ *  (e.g. <div class='et'>...
  *          <span class='et-top et-arrow et-style-night et-narrow'>
  *            ......
  *          </span>
- *        </button>
+ *        </div>
  *  )
  */
 

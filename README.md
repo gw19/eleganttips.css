@@ -15,9 +15,9 @@ or
 ## Usage
 ### Basic usage
 Adding the class &nbsp;`et`&nbsp; in the tag of element in which you want to display the tips on.<br>
-E.g. if you want to show the tips message on your button,<br>
+E.g. if you want to show the tips message on your `div`,<br>
 ```html
-<button class='et'>Hover me!</button>
+<div class='et'>Hover me!</div>
 ```
 then creating a child element `<span>` with adding one of the following position in its class:
 * et-bottom
@@ -28,16 +28,16 @@ then creating a child element `<span>` with adding one of the following position
 * et-left-top
 * et-right-bottom
 * et-right-top
-  
+
 and write messages into `<span>`, e.g.
 ```html
-<button class='et'>Hover me!
+<div class='et'>Hover me!
   <span class='et-top'>
     Here you are!
   </span>
-</button>
+</div>
 ```
-it will show you the message "Here you are!" on the top of the button.
+it will show you the message "Here you are!" on the top of the `div`.
 
 ![example_readme_usage1](examples/en-us/img/example_readme_usage1.png)
 
