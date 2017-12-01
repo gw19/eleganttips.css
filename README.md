@@ -6,7 +6,7 @@ Here is the <a href='https://storage.googleapis.com/eleganttips/index.html' targ
 
 ## Installation
 Choose one of the following ways,
-#### Including source file.<br>
+#### Including source file<br>
 ```html
 <link rel='stylesheet' href='eleganttips.css'>
 ```
