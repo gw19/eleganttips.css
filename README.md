@@ -92,7 +92,7 @@ Now you can try to include all of the features you want inside your child elemen
 ```
 Here is the <a href='https://eleganttips.herokuapp.com/' target='_blank'>example page</a>.
 ## Problems to be solved (future work)
-It seems that in Firefox 56+, while using `<button class='et'>...</button>` as a parent element, the mouse can NOT be hovered on the tips block, which immediately disappeared when mosue leave `button`. It means that `pointer-event: auto` in CSS can not be used in Firefox with `<button>` as a parent elements, but can be in Chrome, so I used the `<span>` as parent elements in the example page.
+It seems that in Firefox 56+, while using `<button class='et'>...</button>` as a parent element, the mouse can NOT be hovered on the tips block which immediately disappeared when mouse leave `button`. It means that `pointer-event: auto` in CSS can not be used in Firefox with `<button>` as a parent elements, but can be in Chrome, so I used the `<span>` as parent elements in the example page.
 
 ## License
 MIT license.
