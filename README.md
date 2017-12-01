@@ -1,4 +1,4 @@
-# eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)&nbsp;&nbsp;[![license](https://img.shields.io/github/license/gw19/eleganttips.css.svg)]()
+# eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)&nbsp;[![license](https://img.shields.io/github/license/gw19/eleganttips.css.svg)]()
 Provide a simple and elegant tips message (tooltips) on your element while mouse hover or focus on. (pure CSS)<br>
 Here is the <a href='https://storage.googleapis.com/eleganttips/index.html' target='_blank'>example page</a>.
 
