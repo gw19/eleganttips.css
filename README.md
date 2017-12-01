@@ -5,13 +5,18 @@ Here is the <a href='https://storage.googleapis.com/eleganttips/index.html' targ
 ![example_readme_title](examples/en-us/img/example_readme_title.png)
 
 ## Installation
-Including `eleganttips.css` or `eleganttips.min.css` in your html file.<br>
+Choose one of the following ways,
+#### Including `eleganttips.css` or `eleganttips.min.css` in your html file.<br>
 ```html
 <link rel='stylesheet' href='eleganttips.css'>
 ```
 or
 ```html
 <link rel='stylesheet' href='eleganttips.min.css'>
+```
+#### Including CDN
+```html
+<link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/eleganttips.min.css'>
 ```
 ## Usage
 ### Basic usage
