@@ -57,7 +57,7 @@
   box-sizing: border-box;
 }
 .et {
-  display: inline;
+  display: inline-block;
   position: relative;
 }
 
