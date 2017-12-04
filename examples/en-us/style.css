@@ -57,7 +57,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 999;
-  filter: drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.7));
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .nav-content {
@@ -78,12 +78,13 @@ a {
 .header {
   background-color: #363636;;
   color: lightgoldenrodyellow;
-  min-height: 460px;
+  min-height: 76vmin;
   /*margin-top: 66px;*/
   padding: 60px 10px;
   position: relative;
   text-align: center;
   width: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
 }
 .header-title {
   font-size: 7vh;
@@ -103,11 +104,11 @@ a {
   margin: 45px auto 60px;
   text-align: center;
   vertical-align: middle;
-  width: 40vh; /*  RWD  */
+  width: 67vh; /*  RWD  */
 }
 .header-action div {
   margin: 10px;
-  min-width: 336px;  /*  RWD  */
+  /*min-width: 320px;  !*  RWD  *!*/
   width: 100%;
 }
 .header-link a {
@@ -154,10 +155,12 @@ a {
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
   font-size: 2.5vh; /*  RWD  */
-  padding: 12px 26px;
+  padding: 12px 2px;
   transition: 0.2s;
   position: relative;
 }
+
+/******  Sections  ******/
 
 .section-container {
   display: block;
@@ -167,7 +170,9 @@ a {
 
 .section-title {
   color: #454545;
-  font-size: 40px;
+  font-size: 5vh;
+  font-weight: bolder;
+  font-family: 'Work Sans', sans-serif;
   text-align: center;
 }
 
@@ -286,7 +291,7 @@ span:focus {
   .header-action,
   .header-example {
     flex-wrap: wrap;
-    /*width: 60%;*/
+    width: 60%;
   }
   /*.header-link div {*/
     /*min-width: 200px;*/
