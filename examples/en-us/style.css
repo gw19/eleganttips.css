@@ -104,7 +104,7 @@ a {
   margin: 45px auto 60px;
   text-align: center;
   vertical-align: middle;
-  width: 67vh; /*  RWD  */
+  width: 66vh; /*  RWD  */
 }
 .header-action div {
   margin: 10px;
@@ -123,7 +123,7 @@ a {
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
   font-size: 3vh; /*  RWD  */
-  padding: 12px 26px;
+  padding: 12px 2px;
   transition: 0.2s;
   position: relative;
   width: 100%;
