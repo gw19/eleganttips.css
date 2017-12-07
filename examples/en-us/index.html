@@ -3,14 +3,14 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='x-ua-compatible' content='ie=edge'>
-  <title>Elegant Tip examples</title>
+  <title>Eleganttips.css</title>
   <meta name='description' content='Elegant Tips examples page. Provide an elegant and configurable tips message block (tooltips) on your DOM element while mouse hover or focus on. (pure CSS)'>
   <meta name='author' content='GW19'>
   <link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/style.css'>
   <link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/eleganttips.min.css'>
-  <link rel='stylesheet' href='style.css'>
-  <!--<link rel='stylesheet' href='../../eleganttips.min.css'>-->
+  <!--<link rel='stylesheet' href='style.css'>-->
   <!--<link rel='stylesheet' href='../../eleganttips.css'>-->
+  <!--<link rel='stylesheet' href='../../eleganttips.min.css'>-->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +21,7 @@
       <span class='et-right et-arrow' style='font-size: 26px;'><b>Welcome to Elegant Tips</b></span>
     </a>
     <a class='my-page et' href='https://github.com/gw19/eleganttips.css' target='_blank'>
-      <img class='nav-logo' src='img/GitHub-Mark-120px-plus.png' width='45'/>
+      <img class='nav-logo' src='https://storage.googleapis.com/eleganttips/GitHub-Mark-120px-plus.png' width='45'/>
       <span class='et-left et-arrow et-style-night' style='font-size: 20px'>
           View on Github
       </span>
@@ -96,7 +96,7 @@
                    target='_blank'>詳全文</a>&gt;
           </span>
           <br><br>
-          <span><img src='img/example_style_night.png' width='100%'/></span>
+          <span><img src='https://storage.googleapis.com/eleganttips/example_style_night.png' width='100%'/></span>
         </span>
       </div>
 
@@ -116,15 +116,61 @@
 
 <div class='section-container'>
 
-  <!--  Orientation  -->
+  <article class='section1'>
+    <div class='section-title'><p>Guides</p></div>
+    <h2>Installation</h2>
+    <p>Choose one of the following ways,</p>
+    <h3>Including source file</h3>
+    <div class='syntax-block'>
+      <pre>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.css&#39;&gt;</pre>
+    </div>
+    <p>or</p>
+    <div class='syntax-block'>
+      <pre>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.min.css&#39;&gt;</pre>
+    </div>
+    <h3>Including CDN</h3>
+    <div class='syntax-block'>
+      <pre>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;https://storage.googleapis.com/eleganttips/eleganttips.min.css&#39;&gt;</pre>
+    </div>
+    <br>
 
-  <div class='section1'>
-    <div class='section-title'><p>Get started</p></div>
+    <h2>Usage</h2>
+    <h3>Basic usage</h3>
+    <p>Adding the class <span class='syntax-inline'>et</span>  in the tag of element in which you want to display the tips on. E.g. if you want to show the tips message on your <span class='syntax-inline'>&lt;button&gt;</span>,</p>
+    <div class='syntax-block'>
+      <pre>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!&lt;/button&gt;</pre>
+    </div>
+    <p>then creating a child element <span class='syntax-inline'>&lt;span&gt;</span> with adding one of the following position in its class:</p>
+    <ul>
+      <li>et-bottom</li>
+      <li>et-top</li>
+      <li>et-left</li>
+      <li>et-right</li>
+      <li>et-left-bottom</li>
+      <li>et-left-top</li>
+      <li>et-right-bottom</li>
+      <li>et-right-top</li>
+    </ul>
+    <p>and write messages into <span class='syntax-inline'>&lt;span&gt;</span>, e.g.</p>
+    <div class='syntax-block'>
+      <pre>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-top&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</pre>
+    </div>
+    <p>Result:</p>
+	<pre>
+	  <button class='et'>Hover me!<span class='et-top'>Here you are!</span></button>
+	</pre>
+    <br>
+
+	<!------  All of the classes  ------>
+    
+	<!--  Orientation  -->
+
+    <h2>All of the classes</h2>
     <div class='section-intro'>Position ( necessary ):&nbsp;
       <span>One of the position class is necessary in the child element &lt;span&gt;.</span><br>
     </div>
 
-    <p style='color: #E64945; font-size: 18px;'>＊ Please move your mouse over the blocks for an example.</p>
+    <p class='section-hint'>＊ Please move your mouse over the blocks for an example.</p>
     <div class='section-demo'>
       <div class='btn et' tabindex='1'><b>Look top</b><br>class='et-top'
         <span class='et-top et-arrow'>I am the message on the top.</span>
@@ -158,7 +204,7 @@
         <span class='et-left-bottom et-arrow'>In the bottom left corner, it's you.</span>
       </div>
     </div>
-  </div>
+  </article>
   <br>
 
   <!--  Styles  -->
@@ -200,12 +246,12 @@
                  target='_blank'>詳全文</a>&gt;
         </span>
         <br><br>
-        <span><img src='img/example_style_night.png' width='100%'/></span></span>
+        <span><img src='https://storage.googleapis.com/eleganttips/example_style_night.png' width='100%'/></span></span>
     </div>
 
     <div class='btn et' tabindex='1'><b>Warning style</b><br>'et-style-warn'
       <span class='et-left-top et-arrow et-style-warn'>
-        <span style='float: left; text-align: center'><img src='img/example_style_warn.png' width='15%'/></span>
+        <span style='float: left; text-align: center'><img src='https://storage.googleapis.com/eleganttips/example_style_warn.png' width='15%'/></span>
         Warning! Children's playground only allows children under the age of 15 to play, you can go with them, but are not allowed to play rides!
       </span>
     </div>
@@ -283,7 +329,7 @@
   </section>
 
   <br>
-  <p style='color: #E64945; font-size: 18px;'>＊ For more details, please view on
+  <p class='section-hint'>＊ For more details, please view on
     <a href='https://github.com/gw19/eleganttips.css' target='_blank'>Github</a>.
   </p>
 
