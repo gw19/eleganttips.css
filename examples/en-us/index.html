@@ -11,7 +11,8 @@
   <!--<link rel='stylesheet' href='style.css'>-->
   <!--<link rel='stylesheet' href='../../eleganttips.css'>-->
   <!--<link rel='stylesheet' href='../../eleganttips.min.css'>-->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500|Work+Sans:200' rel='stylesheet'>
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css'>
 </head>
 <body>
 
@@ -121,26 +122,18 @@
     <h2>Installation</h2>
     <p>Choose one of the following ways,</p>
     <h3>Including source file</h3>
-    <div class='syntax-block'>
-      <pre>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.css&#39;&gt;</pre>
-    </div>
+    <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.css&#39;&gt;</code></pre>
     <p>or</p>
-    <div class='syntax-block'>
-      <pre>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.min.css&#39;&gt;</pre>
-    </div>
+    <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.min.css&#39;&gt;</code></pre>
     <h3>Including CDN</h3>
-    <div class='syntax-block'>
-      <pre>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;https://storage.googleapis.com/eleganttips/eleganttips.min.css&#39;&gt;</pre>
-    </div>
+    <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;https://storage.googleapis.com/eleganttips/eleganttips.min.css&#39;&gt;</code></pre>
     <br>
 
     <h2>Usage</h2>
     <h3>Basic usage</h3>
-    <p>Adding the class <span class='syntax-inline'>et</span>  in the tag of element in which you want to display the tips on. E.g. if you want to show the tips message on your <span class='syntax-inline'>&lt;button&gt;</span>,</p>
-    <div class='syntax-block'>
-      <pre>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!&lt;/button&gt;</pre>
-    </div>
-    <p>then creating a child element <span class='syntax-inline'>&lt;span&gt;</span> with adding one of the following position in its class:</p>
+    <p>Adding the class <span class='syntax-inline-class'>et</span>  in the tag of element in which you want to display the tips on. E.g. if you want to show the tips message on your <span class='syntax-inline-tag'>&lt;button&gt;</span>,</p>
+    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!&lt;/button&gt;</code></pre>
+    <p>then creating a child element <span class='syntax-inline-tag'>&lt;span&gt;</span> with adding one of the following position in its class:</p>
     <ul>
       <li>et-bottom</li>
       <li>et-top</li>
@@ -151,24 +144,22 @@
       <li>et-right-bottom</li>
       <li>et-right-top</li>
     </ul>
-    <p>and write messages into <span class='syntax-inline'>&lt;span&gt;</span>, e.g.</p>
-    <div class='syntax-block'>
-      <pre>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-top&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</pre>
-    </div>
+    <p>and write messages into <span class='syntax-inline-tag'>&lt;span&gt;</span>, e.g.</p>
+    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-top&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
     <p>Result:</p>
-	<pre>
+    <pre>
 	  <button class='et'>Hover me!<span class='et-top'>Here you are!</span></button>
 	</pre>
     <br>
+  </article>
 
-	<!------  All of the classes  ------>
-    
-	<!--  Orientation  -->
+  <!------  All of the classes  ------>
 
-    <h2>All of the classes</h2>
-    <div class='section-intro'>Position ( necessary ):&nbsp;
-      <span>One of the position class is necessary in the child element &lt;span&gt;.</span><br>
-    </div>
+  <article class='section2'>
+    <!--  Orientation  -->
+    <div class='section-title'><p>All of the classes</p></div>
+    <h2>Position ( necessary )</h2>
+    <p>One of the position class is necessary in the child element <span class='syntax-inline-tag'>&lt;span&gt;</span>.</p>
 
     <p class='section-hint'>＊ Please move your mouse over the blocks for an example.</p>
     <div class='section-demo'>
@@ -204,39 +195,37 @@
         <span class='et-left-bottom et-arrow'>In the bottom left corner, it's you.</span>
       </div>
     </div>
-  </article>
-  <br>
+    <br>
 
-  <!--  Styles  -->
+    <!--  Styles  -->
 
-  <div class='section-intro'>Styles ( optional ):&nbsp;
-    <span>Select one class to include into child element &lt;span&gt; if you want.</span><br>
-  </div>
+    <h2>Styles ( optional )</h2>
+    <p>Select one class to include into child element <span class='syntax-inline-tag'>&lt;span&gt;</span> if you want.</p>
 
-  <div class='section-demo'>
-    <div class='btn et' tabindex='1'><b>Default style</b><br>
-      <span class='et-top et-arrow'>
-      <span style='color: #E64945; font: 18px bold;'>&lt;A Dream Within a Dream&gt;</span>
-        <br>Edgar Allan Poe<br><br>
-        Take this kiss upon the brow!<br>
-        And, in parting from you now,<br>
-        Thus much let me avow —<br>
-        You are not wrong, who deem<br>
-        That my days have been a dream;<br>
-        Yet if hope has flown away<br>
-        In a night, or in a day,<br>
-        In a vision, or in none,<br>
-        Is it therefore the less gone?<br>
-        All that we see or seem<br>
-        Is but a dream within a dream.<br>
-        ......
-      <span style='color: #6495ED; font: 18px bold;'>&lt;<a href='https://en.wikipedia.org/wiki/A_Dream_Within_a_Dream'
-                                                            target='_blank'>read more</a>&gt;<br><br></span>
-      </span>
-    </div>
+    <div class='section-demo'>
+      <div class='btn et' tabindex='1'><b>Default style</b><br>
+        <span class='et-top et-arrow'>
+          <span style='color: #E64945; font: 18px bold;'>&lt;A Dream Within a Dream&gt;</span>
+          <br>Edgar Allan Poe<br><br>
+          Take this kiss upon the brow!<br>
+          And, in parting from you now,<br>
+          Thus much let me avow —<br>
+          You are not wrong, who deem<br>
+          That my days have been a dream;<br>
+          Yet if hope has flown away<br>
+          In a night, or in a day,<br>
+          In a vision, or in none,<br>
+          Is it therefore the less gone?<br>
+          All that we see or seem<br>
+          Is but a dream within a dream.<br>
+          ......
+          <span style='color: #6495ED; font: 18px bold;'>&lt;<a href='https://en.wikipedia.org/wiki/A_Dream_Within_a_Dream'
+                                                                target='_blank'>read more</a>&gt;<br><br></span>
+        </span>
+      </div>
 
-    <div class='btn et' tabindex='1'><b>Night style</b><br>'et-style-night'
-      <span class='et-top et-arrow et-style-night'>
+      <div class='btn et' tabindex='1'><b>Night style</b><br>'et-style-night'
+        <span class='et-top et-arrow et-style-night'>
         <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span><br><br>
         臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。
         然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。
@@ -247,76 +236,62 @@
         </span>
         <br><br>
         <span><img src='https://storage.googleapis.com/eleganttips/example_style_night.png' width='100%'/></span></span>
-    </div>
+      </div>
 
-    <div class='btn et' tabindex='1'><b>Warning style</b><br>'et-style-warn'
-      <span class='et-left-top et-arrow et-style-warn'>
+      <div class='btn et' tabindex='1'><b>Warning style</b><br>'et-style-warn'
+        <span class='et-top et-arrow et-style-warn'>
         <span style='float: left; text-align: center'><img src='https://storage.googleapis.com/eleganttips/example_style_warn.png' width='15%'/></span>
         Warning! Children's playground only allows children under the age of 15 to play, you can go with them, but are not allowed to play rides!
-      </span>
+        </span>
+      </div>
     </div>
-  </div>
-  <br>
+    <br>
 
-  <!--  Arrow  -->
+    <!--  Arrow  -->
 
-  <div class='section-intro'>Arrow ( optional ):&nbsp;
-    <span><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in &lt;span&gt;.</span><br>
-  </div>
+    <h2>Arrow ( optional )</h2>
+    <p><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in <span class='syntax-inline-tag'>&lt;span&gt;</span>.</p>
 
-  <section class='section-demo'>
-    <div class='btn et' tabindex='1'><b>Message block with arrow</b><br>'et-arrow'
-      <span class='et-top et-arrow'><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in &lt;span&gt;.</span>
-    </div>
+    <section class='section-demo'>
+      <div class='btn et' tabindex='1'><b>Message block with arrow</b><br>'et-arrow'
+        <span class='et-top et-arrow'><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in &lt;span&gt;.</span>
+      </div>
 
-    <div class='btn et' tabindex='1'><b>Message block without arrow (by default).</b><br>
-      <span class='et-top et-style-night'>
+      <div class='btn et' tabindex='1'><b>Message block without arrow (by default).</b><br>
+        <span class='et-top et-style-night'>
       <span style='color: #00e584; font: 18px bold;'>Lorem Ipsum</span>
       <br><br>
       Duis dignissim mauris ac velit iaculis posuere. Proin quis massa sit amet ante interdum maximus rutrum nec nulla. In ultrices ac dolor eget ultricies. Aenean blandit commodo tortor consectetur porta. Fusce rhoncus arcu aliquet nunc venenatis imperdiet. Curabitur tincidunt felis ac egestas rutrum. Vivamus tincidunt a velit ac venenatis. Sed lacinia metus ac magna elementum blandit. In quis varius nisi.
       (from <span style='color: whitesmoke; font: 18px bold;'><a href='https://www.lipsum.com/' target='_blank'>Lorem Ipsum</a></span>)
       <br><br>
       </span>
-    </div>
-  </section>
-  <br>
+      </div>
+    </section>
+    <br>
 
-  <!--  Width  -->
+    <!--  Width  -->
 
-  <div class='section-intro'>Width of tips block ( optional ):&nbsp;
-    <span>Select one class to include into child element &lt;span&gt; if needed.</span><br>
-  </div>
+    <h2>Width of tips block ( optional )</h2>
+    <p>Select one class to include into child element <span class='syntax-inline-tag'>&lt;span&gt;</span> if needed.</p>
 
-  <section class='section-demo'>
-    <div class='btn et' tabindex='1'><b>Narrow message block (260px)</b><br>'et-narrow'
-      <span class='et-top et-arrow et-narrow'>The max-width of block is 260px here.<br>
+    <section class='section-demo'>
+      <div class='btn et' tabindex='1'><b>Narrow message block (260px)</b><br>'et-narrow'
+        <span class='et-top et-arrow et-narrow'>The max-width of block is 260px here.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div>
+      </div>
 
-    <div class='btn et' tabindex='1'><b>Wider message block (660px)</b><br>'et-wide'
-      <span class='et-top et-arrow et-wide'>The max-width of block is 660px here.<br>
+      <div class='btn et' tabindex='1'><b>Wider message block (660px)</b><br>'et-wide'
+        <span class='et-top et-arrow et-wide'>The max-width of block is 660px here.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div>
-
-    <div class='btn et' tabindex='1'><b>Default width (400px)</b><br>
-      <span class='et-top et-arrow '>The default max-width is 400px.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -325,19 +300,33 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div>
-  </section>
+      </div>
 
-  <br>
-  <p class='section-hint'>＊ For more details, please view on
-    <a href='https://github.com/gw19/eleganttips.css' target='_blank'>Github</a>.
-  </p>
+      <div class='btn et' tabindex='1'><b>Default width (400px)</b><br>
+        <span class='et-top et-arrow '>The default max-width is 400px.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </section>
 
+    <br>
+    <p class='section-hint'>＊ For more details, please view on
+      <a href='https://github.com/gw19/eleganttips.css' target='_blank'>Github</a>.
+    </p>
+  </article>
 </div>
 
 <footer class='footer'>
   <div class='footer-content'>&copy; 2017 Guan-Wen CHEN. All rights reserved.</div>
 </footer>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

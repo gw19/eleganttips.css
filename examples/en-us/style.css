@@ -52,16 +52,28 @@ pre,
 code {
   display: block;
 }
-.syntax-block {
-  background-color: #ebebeb;
-  font-size: 16px;
-  padding: 10px 23px;
-  overflow-x: scroll;
+article {
+  font-size: 2.1vh;
 }
-.syntax-inline {
-  background-color: #ebebeb;
+.syntax-block {
+  font-size: 1.9vh;
+  padding: 10px 23px;
+  /*overflow-x: scroll;*/
+}
+.syntax-block * {
+  font-family: 'Source Code Pro', monospace;
+}
+.syntax-inline-tag,
+.syntax-inline-class {
+  font-family: 'Source Code Pro', monospace;
   font-size: inherit;
-  padding: 1px 10px;
+  margin: 0 6px;
+}
+.syntax-inline-tag {
+  color: #63a35c;
+}
+.syntax-inline-class {
+  color: #df5000;
 }
 
 /*  link  */
@@ -316,10 +328,6 @@ span:focus {
 @media only screen and (max-width: 1030px) {
   .nav-content {
     width: 80%;
-  }
-  .logo.et span,
-  .header-title.et span {
-    display: none;
   }
   .header-action,
   .header-example {
