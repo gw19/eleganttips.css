@@ -225,7 +225,7 @@ a {
 
 .section-hint {
   color: #E64945;
-  font-size: 18px;
+  font-size: 1.9vh;
 }
 
 .section-demo {
@@ -272,18 +272,18 @@ span:focus {
   outline: none;
 }
 
-.my-page {
+.nav-link {
   float: right;
   /*padding-top: 2px;*/
   opacity: 0.8;
   transition: opacity 0.2s;
 }
-.my-page:hover,
-.my-page:focus {
+.nav-link:hover,
+.nav-link:focus {
   opacity: 1;
 }
-.my-page:active,
-.my-page:focus {
+.nav-link:active,
+.nav-link:focus {
   outline: none;
 }
 
@@ -336,8 +336,9 @@ span:focus {
   .header-link-text {
     font-size: 2vh;
   }
-  .header-example-text {
-    font-size: 1.5vh;
+  .header-example-text,
+  .btn {
+    font-size: 1.6vh;
   }
   .section-demo {
     justify-content: center;
