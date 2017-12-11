@@ -286,7 +286,13 @@ span:focus {
 .nav-link:focus {
   outline: none;
 }
-
+.section-license {
+  font-size: 3vh;
+  text-align: center;
+}
+.section-end {
+  margin-bottom: 120px;
+}
 .footer {
   display: flex;
   align-content: center;
