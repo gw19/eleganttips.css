@@ -6,60 +6,80 @@
   <title>Eleganttips.css</title>
   <meta name='description' content='Elegant Tips examples page. Provide an elegant and configurable tips message block (tooltips) on your DOM element while mouse hover or focus on. (pure CSS)'>
   <meta name='author' content='GW19'>
-  <!--<link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/style.css'>-->
-  <!--<link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/eleganttips.min.css'>-->
-  <link rel='stylesheet' href='style.css'>
-  <link rel='stylesheet' href='../../eleganttips.css'>
+  <link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/style.css'>
+  <link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/eleganttips.min.css'>
+  <!--<link rel='stylesheet' href='style.css'>-->
+  <!--<link rel='stylesheet' href='../../eleganttips.css'>-->
   <!--<link rel='stylesheet' href='../../eleganttips.min.css'>-->
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500|Work+Sans:200' rel='stylesheet'>
   <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css'>
+
+  <script type='text/javascript'>
+    function ready(fn) {
+      if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading'){
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+    function showContain() {
+      var elemContain = document.getElementById('mainContain');
+      var loader = document.getElementById('loader');
+      loader.style.display = 'none';
+      elemContain.style.display = 'block';
+    }
+    document.write("<div id='loader' style='display: block'></div>");
+    ready(showContain);
+  </script>
+
 </head>
 <body>
-<!--[if lte IE 11]>
+<!--[if lte IE 10]>
 <p class='browserupgrade'>You are using an <strong>outdated</strong> browser.
   Please <a href='https://browsehappy.com/'>upgrade your browser</a>
   to improve your experience and security.</p>
 <![endif]-->
 
-<nav class='nav'>
-  <div class='nav-content'>
-    <a class='logo et' href='/'>Eleganttips.css
-      <span class='et-right et-arrow' style='font-size: 26px;'><b>Welcome to Elegant Tips</b></span>
-    </a>
-    <a class='nav-link et' href='https://github.com/gw19/eleganttips.css' target='_blank'>
-      <img class='nav-logo' src='https://storage.googleapis.com/eleganttips/GitHub-Mark-120px-plus.png' width='45'/>
-      <span class='et-left et-arrow et-style-night' style='font-size: 20px'>
+<div id='mainContain'>
+  <nav class='nav'>
+    <div class='nav-content'>
+      <a class='logo et' href='/'>Eleganttips.css
+        <span class='et-right et-arrow' style='font-size: 26px;'><b>Welcome to Elegant Tips</b></span>
+      </a>
+      <a class='nav-link et' href='https://github.com/gw19/eleganttips.css' target='_blank'>
+        <img class='nav-logo' src='https://storage.googleapis.com/eleganttips/GitHub-Mark-120px-plus.png' width='45'/>
+        <span class='et-left et-arrow et-style-night' style='font-size: 20px'>
           View on Github
       </span>
-    </a>
-  </div>
-</nav>
+      </a>
+    </div>
+  </nav>
 
-<!------  Header  ------>
+  <!------  Header  ------>
 
-<div class='header'>
+  <div class='header'>
 
-  <!--  Introduction in header -->
+    <!--  Introduction in header -->
 
-  <p class='header-title et'>Eleganttips.css
-    <span class='et-top et-arrow et-wide' style='font-size: 18px'>
+    <p class='header-title et'>Eleganttips.css
+      <span class='et-top et-arrow et-wide' style='font-size: 18px'>
       Hope this library may help you when designing your web page!
     </span>
-  </p>
+    </p>
 
-  <div>
-    <p class='header-intro'>An elegant and configurable tooltips block on your DOM element. (pure CSS)</p>
+    <div>
+      <p class='header-intro'>An elegant and configurable tooltips block on your DOM element. (pure CSS)</p>
 
-    <div class='header-action'>
+      <div class='header-action'>
 
-      <div class='header-link' tabindex='1'>
-        <a href='https://github.com/gw19/eleganttips.css' target='_blank'>
-          <span class='header-link-text'>View source code</span>
-        </a>
-      </div>
+        <div class='header-link' tabindex='1'>
+          <a href='https://github.com/gw19/eleganttips.css' target='_blank'>
+            <span class='header-link-text'>View source code</span>
+          </a>
+        </div>
 
-      <div class='header-link' tabindex='1'>
-        <a download href='https://raw.githubusercontent.com/gw19/eleganttips.css/master/eleganttips.min.css' target='_blank'>
+        <div class='header-link' tabindex='1'>
+          <a download href='https://raw.githubusercontent.com/gw19/eleganttips.css/master/eleganttips.min.css' target='_blank'>
           <span class='header-link-text et'>Get it now
             <span class='et-bottom et-arrow et-wide' style='pointer-events: none;'>
               <b>Eleganttips.css v1.2</b><br>
@@ -70,29 +90,29 @@
               </ul>
             </span>
           </span>
-        </a>
+          </a>
+        </div>
+
       </div>
-
     </div>
-  </div>
 
-  <!--  Examples in header -->
+    <!--  Examples in header -->
 
-  <div>
-    <p class='header-intro'>Hover them:</p>
+    <div>
+      <p class='header-intro'>Hover them:</p>
 
-    <div class='header-example' tabindex='1'>
+      <div class='header-example' tabindex='1'>
 
-      <div class='header-example-text et'>Lorem Ipsum
-        <span class='et-top et-arrow et-narrow'>
+        <div class='header-example-text et'>Lorem Ipsum
+          <span class='et-top et-arrow et-narrow'>
           <span style='color: #E64945; font: 18px bold;'>&lt;Lorem Ipsum&gt;</span><br>
       Duis dignissim mauris ac velit iaculis posuere. Proin quis massa sit amet ante interdum maximus rutrum nec nulla. In ultrices ac dolor eget ultricies. Aenean blandit commodo tortor consectetur porta. Fusce rhoncus arcu aliquet nunc venenatis imperdiet. Curabitur tincidunt felis ac egestas rutrum. Vivamus tincidunt a velit ac venenatis. Sed lacinia metus ac magna elementum blandit. In quis varius nisi.<br>
       (from <span style='color: #6495ED; font: 18px bold;'><a href='https://www.lipsum.com/' target='_blank'>Lorem Ipsum</a></span>)
         </span>
-      </div>
+        </div>
 
-      <div class='header-example-text et'>Zhuge Liang
-        <span class='et-top et-arrow et-style-night'>
+        <div class='header-example-text et'>Zhuge Liang
+          <span class='et-top et-arrow et-style-night'>
           <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span><br><br>
           臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。
           然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。
@@ -104,118 +124,118 @@
           <br><br>
           <span><img src='https://storage.googleapis.com/eleganttips/example_style_night.png' width='100%'/></span>
         </span>
-      </div>
+        </div>
 
-      <div class='header-example-text et'><strong>Don't hover me</strong>
-        <span class='et-left-top et-arrow et-style-warn'>
+        <div class='header-example-text et'><strong>Don't hover me</strong>
+          <span class='et-left-top et-arrow et-style-warn'>
           I said don't hover me!
         </span>
+        </div>
+
       </div>
 
     </div>
 
   </div>
 
-</div>
+  <!------  Sections  ------>
 
-<!------  Sections  ------>
+  <div class='section-container'>
 
-<div class='section-container'>
+    <article class='section1'>
+      <div class='section-title'><p>Guides</p></div>
+      <h2>Installation</h2>
+      <p>Choose one of the following ways,</p>
+      <h3>Including source file</h3>
+      <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.css&#39;&gt;</code></pre>
+      <p>or</p>
+      <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.min.css&#39;&gt;</code></pre>
+      <h3>Including CDN</h3>
+      <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;https://storage.googleapis.com/eleganttips/eleganttips.min.css&#39;&gt;</code></pre>
+      <br>
 
-  <article class='section1'>
-    <div class='section-title'><p>Guides</p></div>
-    <h2>Installation</h2>
-    <p>Choose one of the following ways,</p>
-    <h3>Including source file</h3>
-    <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.css&#39;&gt;</code></pre>
-    <p>or</p>
-    <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;eleganttips.min.css&#39;&gt;</code></pre>
-    <h3>Including CDN</h3>
-    <pre class='syntax-block'><code class='html'>&lt;link&nbsp;rel=&#39;stylesheet&#39;&nbsp;href=&#39;https://storage.googleapis.com/eleganttips/eleganttips.min.css&#39;&gt;</code></pre>
-    <br>
-
-    <h2>Usage</h2>
-    <h3>Basic usage</h3>
-    <p>Adding the class <span class='syntax-inline-class'>et</span>  in the tag of element in which you want to display the tips on. E.g. if you want to show the tips message on your <span class='syntax-inline-tag'>&lt;button&gt;</span>,</p>
-    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!&lt;/button&gt;</code></pre>
-    <p>then creating a child element <span class='syntax-inline-tag'>&lt;span&gt;</span> with adding one of the following position in its class:</p>
-    <ul>
-      <li>et-bottom</li>
-      <li>et-top</li>
-      <li>et-left</li>
-      <li>et-right</li>
-      <li>et-left-bottom</li>
-      <li>et-left-top</li>
-      <li>et-right-bottom</li>
-      <li>et-right-top</li>
-    </ul>
-    <p>and write messages into <span class='syntax-inline-tag'>&lt;span&gt;</span>, e.g.</p>
-    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-top&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
-    <p>Result:</p>
-    <pre>
+      <h2>Usage</h2>
+      <h3>Basic usage</h3>
+      <p>Adding the class <span class='syntax-inline-class'>et</span>  in the tag of element in which you want to display the tips on. E.g. if you want to show the tips message on your <span class='syntax-inline-tag'>&lt;button&gt;</span>,</p>
+      <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!&lt;/button&gt;</code></pre>
+      <p>then creating a child element <span class='syntax-inline-tag'>&lt;span&gt;</span> with adding one of the following position in its class:</p>
+      <ul>
+        <li>et-bottom</li>
+        <li>et-top</li>
+        <li>et-left</li>
+        <li>et-right</li>
+        <li>et-left-bottom</li>
+        <li>et-left-top</li>
+        <li>et-right-bottom</li>
+        <li>et-right-top</li>
+      </ul>
+      <p>and write messages into <span class='syntax-inline-tag'>&lt;span&gt;</span>, e.g.</p>
+      <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-top&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
+      <p>Result:</p>
+      <pre>
       <button class='et'>Hover me!<span class='et-top'>Here you are!</span></button>
     </pre>
-    <br>
-  </article>
+      <br>
+    </article>
 
-  <!------  All of the classes  ------>
+    <!------  All of the classes  ------>
 
-  <article class='section2'>
-    <!--  Orientation  -->
-    <div class='section-title'><p>All of the classes</p></div>
-    <h2>Position ( necessary )</h2>
-    <p>One of the position class is necessary in the child element <span class='syntax-inline-tag'>&lt;span&gt;</span>.</p>
+    <article class='section2'>
+      <!--  Orientation  -->
+      <div class='section-title'><p>All of the classes</p></div>
+      <h2>Position ( necessary )</h2>
+      <p>One of the position class is necessary in the child element <span class='syntax-inline-tag'>&lt;span&gt;</span>.</p>
 
-    <p class='section-hint'>＊ Please move your mouse over the blocks for an example.</p>
-    <div class='section-demo'>
-      <div class='btn et' tabindex='1'><b>Look top</b><br>class='et-top'
-        <span class='et-top et-arrow'>I am the message on the top.</span>
+      <p class='section-hint'>＊ Please move your mouse over the blocks for an example.</p>
+      <div class='section-demo'>
+        <div class='btn et' tabindex='1'><b>Look top</b><br>class='et-top'
+          <span class='et-top et-arrow'>I am the message on the top.</span>
+        </div>
+
+        <div class='btn et' tabindex='1'><b>Look down</b><br>'et-bottom'
+          <span class='et-bottom et-arrow'>And I am the message on the bottom.</span>
+        </div>
+
+        <div class='btn et' tabindex='1'><b>Look left</b><br>'et-left'
+          <span class='et-left et-arrow'>There is a message <br>on the left.</span>
+        </div>
+
+        <div class='btn et' tabindex='1'><b>Look right</b><br>'et-right'
+          <span class='et-right et-arrow'>There is also a message <br>on the right!</span>
+        </div>
+
       </div>
 
-      <div class='btn et' tabindex='1'><b>Look down</b><br>'et-bottom'
-        <span class='et-bottom et-arrow'>And I am the message on the bottom.</span>
+      <div class='section-demo'>
+        <div class='btn et' tabindex='1'><b>Top right corner</b><br>'et-right-top'
+          <span class='et-right-top et-arrow'>What is in the <br>upper right corner?</span>
+        </div>
+        <div class='btn et' tabindex='1'><b>Top left corner</b><br>'et-left-top'
+          <span class='et-left-top et-arrow'>Actually, I am a half left-handed.</span>
+        </div>
+        <div class='btn et' tabindex='1'><b>Bot right corner</b><br>'et-right-bottom'
+          <span class='et-right-bottom et-arrow'>Your tool is placed<br> on the bottom right.</span>
+        </div>
+        <div class='btn et' tabindex='1'><b>Bot left corner</b><br>'et-left-bottom'
+          <span class='et-left-bottom et-arrow'>In the bottom left corner, it's you.</span>
+        </div>
       </div>
-
-      <div class='btn et' tabindex='1'><b>Look left</b><br>'et-left'
-        <span class='et-left et-arrow'>There is a message <br>on the left.</span>
-      </div>
-
-      <div class='btn et' tabindex='1'><b>Look right</b><br>'et-right'
-        <span class='et-right et-arrow'>There is also a message <br>on the right!</span>
-      </div>
-
-    </div>
-
-    <div class='section-demo'>
-      <div class='btn et' tabindex='1'><b>Top right corner</b><br>'et-right-top'
-        <span class='et-right-top et-arrow'>What is in the <br>upper right corner?</span>
-      </div>
-      <div class='btn et' tabindex='1'><b>Top left corner</b><br>'et-left-top'
-        <span class='et-left-top et-arrow'>Actually, I am a half left-handed.</span>
-      </div>
-      <div class='btn et' tabindex='1'><b>Bot right corner</b><br>'et-right-bottom'
-        <span class='et-right-bottom et-arrow'>Your tool is placed<br> on the bottom right.</span>
-      </div>
-      <div class='btn et' tabindex='1'><b>Bot left corner</b><br>'et-left-bottom'
-        <span class='et-left-bottom et-arrow'>In the bottom left corner, it's you.</span>
-      </div>
-    </div>
-    <p>Example: </p>
-    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-right&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
-    <p>Result:</p>
-    <pre>
+      <p>Example: </p>
+      <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-right&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
+      <p>Result:</p>
+      <pre>
       <button class='et'>Hover me!<span class='et-right'>Here you are!</span></button>
     </pre>
-    <br>
+      <br>
 
-    <!--  Styles  -->
+      <!--  Styles  -->
 
-    <h2>Styles ( optional )</h2>
-    <p>Select one class to include into child element <span class='syntax-inline-tag'>&lt;span&gt;</span> if you want.</p>
+      <h2>Styles ( optional )</h2>
+      <p>Select one class to include into child element <span class='syntax-inline-tag'>&lt;span&gt;</span> if you want.</p>
 
-    <div class='section-demo'>
-      <div class='btn et' tabindex='1'><b>Default style</b><br>
-        <span class='et-top et-arrow'>
+      <div class='section-demo'>
+        <div class='btn et' tabindex='1'><b>Default style</b><br>
+          <span class='et-top et-arrow'>
           <span style='color: #E64945; font: 18px bold;'>&lt;A Dream Within a Dream&gt;</span>
           <br>Edgar Allan Poe<br><br>
           Take this kiss upon the brow!<br>
@@ -233,10 +253,10 @@
           <span style='color: #6495ED; font: 18px bold;'>&lt;<a href='https://en.wikipedia.org/wiki/A_Dream_Within_a_Dream'
                                                                 target='_blank'>read more</a>&gt;<br><br></span>
         </span>
-      </div>
+        </div>
 
-      <div class='btn et' tabindex='1'><b>Night style</b><br>'et-style-night'
-        <span class='et-top et-arrow et-style-night'>
+        <div class='btn et' tabindex='1'><b>Night style</b><br>'et-style-night'
+          <span class='et-top et-arrow et-style-night'>
         <span style='color: orange; font: 18px bold;'>諸葛亮 &lt;前出師表&gt;</span><br><br>
         臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。
         然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。
@@ -247,86 +267,74 @@
         </span>
         <br><br>
         <span><img src='https://storage.googleapis.com/eleganttips/example_style_night.png' width='100%'/></span></span>
-      </div>
+        </div>
 
-      <div class='btn et' tabindex='1'><b>Warning style</b><br>'et-style-warn'
-        <span class='et-top et-arrow et-style-warn'>
+        <div class='btn et' tabindex='1'><b>Warning style</b><br>'et-style-warn'
+          <span class='et-top et-arrow et-style-warn'>
         <span style='float: left; text-align: center'><img src='https://storage.googleapis.com/eleganttips/example_style_warn.png' width='15%'/></span>
         Warning! Children's playground only allows children under the age of 15 to play, you can go with them, but are not allowed to play rides!
         </span>
+        </div>
       </div>
-    </div>
-    <p>Example: </p>
-    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-right et-style-night&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
-    <p>Result:</p>
-    <pre>
+      <p>Example: </p>
+      <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-right et-style-night&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
+      <p>Result:</p>
+      <pre>
       <button class='et'>Hover me!<span class='et-right et-style-night'>Here you are!</span></button>
     </pre>
-    <br>
+      <br>
 
-    <!--  Arrow  -->
+      <!--  Arrow  -->
 
-    <h2>Arrow ( optional )</h2>
-    <p><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in <span class='syntax-inline-tag'>&lt;span&gt;</span>.</p>
+      <h2>Arrow ( optional )</h2>
+      <p><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in <span class='syntax-inline-tag'>&lt;span&gt;</span>.</p>
 
-    <div class='section-demo'>
-      <div class='btn et' tabindex='1'><b>Message block with arrow</b><br>'et-arrow'
-        <span class='et-top et-arrow'><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in &lt;span&gt;.</span>
-      </div>
+      <div class='section-demo'>
+        <div class='btn et' tabindex='1'><b>Message block with arrow</b><br>'et-arrow'
+          <span class='et-top et-arrow'><strong><u>By default, there is no arrow.</u></strong> If you want an arrow, add <b>'et-arrow'</b> to class in &lt;span&gt;.</span>
+        </div>
 
-      <div class='btn et' tabindex='1'><b>Message block without arrow (by default).</b><br>
-        <span class='et-top et-style-night'>
+        <div class='btn et' tabindex='1'><b>Message block without arrow (by default).</b><br>
+          <span class='et-top et-style-night'>
       <span style='color: #00e584; font: 18px bold;'>Lorem Ipsum</span>
       <br><br>
       Duis dignissim mauris ac velit iaculis posuere. Proin quis massa sit amet ante interdum maximus rutrum nec nulla. In ultrices ac dolor eget ultricies. Aenean blandit commodo tortor consectetur porta. Fusce rhoncus arcu aliquet nunc venenatis imperdiet. Curabitur tincidunt felis ac egestas rutrum. Vivamus tincidunt a velit ac venenatis. Sed lacinia metus ac magna elementum blandit. In quis varius nisi.
       (from <span style='color: whitesmoke; font: 18px bold;'><a href='https://www.lipsum.com/' target='_blank'>Lorem Ipsum</a></span>)
       <br><br>
       </span>
+        </div>
       </div>
-    </div>
-    <p>Example: </p>
-    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-bottom et-style-night et-arrow&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
-    <p>Result:</p>
-    <pre>
+      <p>Example: </p>
+      <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-bottom et-style-night et-arrow&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
+      <p>Result:</p>
+      <pre>
       <button class='et'>Hover me!<span class='et-bottom et-style-night et-arrow'>Here you are!</span></button>
     </pre>
-    <br>
+      <br>
 
-    <!--  Width  -->
+      <!--  Width  -->
 
-    <h2>Width of tips block ( optional )</h2>
-    <p>Select one class to include into child element <span class='syntax-inline-tag'>&lt;span&gt;</span> if needed.</p>
+      <h2>Width of tips block ( optional )</h2>
+      <p>Select one class to include into child element <span class='syntax-inline-tag'>&lt;span&gt;</span> if needed.</p>
 
-    <div class='section-demo'>
-      <div class='btn et' tabindex='1'><b>Narrow message block (260px)</b><br>'et-narrow'
-        <span class='et-top et-arrow et-narrow'>The max-width of block is 260px here.<br>
+      <div class='section-demo'>
+        <div class='btn et' tabindex='1'><b>Narrow message block (260px)</b><br>'et-narrow'
+          <span class='et-top et-arrow et-narrow'>The max-width of block is 260px here.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </div>
+        </div>
 
-      <div class='btn et' tabindex='1'><b>Wider message block (660px)</b><br>'et-wide'
-        <span class='et-top et-arrow et-wide'>The max-width of block is 660px here.<br>
+        <div class='btn et' tabindex='1'><b>Wider message block (660px)</b><br>'et-wide'
+          <span class='et-top et-arrow et-wide'>The max-width of block is 660px here.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </div>
-
-      <div class='btn et' tabindex='1'><b>Default width (400px)</b><br>
-        <span class='et-top et-arrow '>The default max-width is 400px.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -335,30 +343,44 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+        <div class='btn et' tabindex='1'><b>Default width (400px)</b><br>
+          <span class='et-top et-arrow '>The default max-width is 400px.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
       </div>
-    </div>
-    <p>Example: </p>
-    <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-bottom et-style-night et-arrow et-wide&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
-    <p>Result:</p>
-    <pre>
+      <p>Example: </p>
+      <pre class='syntax-block'><code class='html'>&lt;button&nbsp;class=&#39;et&#39;&gt;Hover&nbsp;me!<br>&nbsp;&nbsp;&lt;span&nbsp;class=&#39;et-bottom et-style-night et-arrow et-wide&#39;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;you&nbsp;are!<br>&nbsp;&nbsp;&lt;/span&gt;<br>&lt;/button&gt;</code></pre>
+      <p>Result:</p>
+      <pre>
       <button class='et'>Hover me!<span class='et-bottom et-style-night et-arrow et-wide'>Here you rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr!</span></button>
     </pre>
+      <br>
+    </article>
+
+    <article class='section-end section-license'>
+      <div class='section-title'><p>License</p></div>
+      <p>Eleganttips.css is under the MIT license.</p>
+    </article>
     <br>
-  </article>
 
-  <article class='section-end section-license'>
-    <div class='section-title'><p>License</p></div>
-    <p>Eleganttips.css is under the MIT license.</p>
-  </article>
-  <br>
+  </div>
 
+  <footer class='footer'>
+    <div class='footer-content'>&copy; 2017 Guan-Wen CHEN. All rights reserved.</div>
+  </footer>
 </div>
-
-<footer class='footer'>
-  <div class='footer-content'>&copy; 2017 Guan-Wen CHEN. All rights reserved.</div>
-</footer>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
 </body>
 </html>
