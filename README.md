@@ -2,7 +2,7 @@
 Provide an elegant and configurable tips message block (tooltips) on your DOM element while mouse hover or focus on. (pure CSS)<br>
 Here is the <a href='https://storage.googleapis.com/eleganttips/index.html' target='_blank'>example page</a>.
 
-![example_readme_title](examples/en-us/img/example_readme_title.png)
+![example_readme_title](docs/img/example_readme_title.png)
 
 ## Installation
 Choose one of the following ways,
@@ -45,7 +45,7 @@ and write messages into `<span>`, e.g.
 ```
 it will show you the message "Here you are!" on the top of the `<button>`.
 
-![example_readme_usage1](examples/en-us/img/example_readme_usage1.png)
+![example_readme_usage1](docs/img/example_readme_usage1.png)
 
 **Note that the class &nbsp;`et`&nbsp; is necessary in the parent element,<br>
 and one of the position classes like &nbsp;`et-top`&nbsp; is necessary in the child element `<span>`.**
@@ -59,7 +59,7 @@ By default, there is no arrow. If you want an arrow, add 'et-arrow' to class in 
 ```html
 <span class='et-top et-arrow'>Here you are!</span>
 ```
-![example_readme_usage1](examples/en-us/img/example_readme_usage2.png)
+![example_readme_usage1](docs/img/example_readme_usage2.png)
 <br>
 <br>
 #### Styles
@@ -70,14 +70,14 @@ Select one of following classes to include into child element `<span>` if you wa
 <span class='et-top et-arrow et-style-night'>......</span>
 ```
   
-![example_readme_usage1](examples/en-us/img/example_readme_usage3.png)
+![example_readme_usage1](docs/img/example_readme_usage3.png)
 <br>
 <br>
 ```html
 <span class='et-top et-arrow et-style-warn'>......</span>
 ```
 
-![example_readme_usage1](examples/en-us/img/example_readme_usage4.png)
+![example_readme_usage1](docs/img/example_readme_usage4.png)
 <br>
 <br>
 #### Width of tips block
