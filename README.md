@@ -16,7 +16,7 @@ or
 ```
 #### Including CDN
 ```html
-<link rel='stylesheet' href='https://storage.googleapis.com/eleganttips/eleganttips.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/gw19/Eleganttips.css@1.2.1/eleganttips.min.css'>
 ```
 ## Usage
 ### Basic usage
