@@ -114,7 +114,7 @@ a {
   display: flex;
   align-content: center;
   justify-content: center;
-  background-color: lightgoldenrodyellow;
+  background-color: #fff8c2;
   color: #454545;
   font-size: 30px;
   font-weight: bold;
@@ -143,7 +143,7 @@ a {
 
 .header {
   background-color: #363636;;
-  color: lightgoldenrodyellow;
+  color: #fff8c2;
   min-height: 76vmin;
   /*margin-top: 66px;*/
   padding: 60px 10px;
@@ -153,12 +153,12 @@ a {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 .header-title {
-  color: lightgoldenrodyellow;
+  color: #fff8c2;
   font-size: 7vh;
   margin-bottom: 30px;
 }
 .header-intro {
-  color: lightgoldenrodyellow;
+  color: #fff8c2;
   font-size: 3vh;
   font-family: 'Work Sans', sans-serif;
   margin-top: 0;

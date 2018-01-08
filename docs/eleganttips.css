@@ -93,7 +93,7 @@
 .et .et-left-bottom,
 .et .et-right-bottom {
   display: inline-block;
-  background-color: #ffffe1;
+  background-color: #fff8c2;
   border: 2px solid #367abd;
   border-radius: 6px;
   color: #454545;
@@ -146,7 +146,7 @@
   filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-bottom.et-arrow::after {
-  border-bottom-color: #ffffe1;
+  border-bottom-color: #fff8c2;
   bottom: 100%;
   left: 50%;
   margin-left: -12px;
@@ -169,7 +169,7 @@
   filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-top.et-arrow::after {
-  border-top-color: #ffffe1;
+  border-top-color: #fff8c2;
   top: 100%;
   left: 50%;
   margin-left: -12px;
@@ -192,7 +192,7 @@
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-left.et-arrow::after {
-  border-left-color: #ffffe1;
+  border-left-color: #fff8c2;
   top: 50%;
   left: 100%;
   margin-top: -8px;
@@ -215,7 +215,7 @@
   filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.7));
 }
 .et .et-right.et-arrow::after {
-  border-right-color: #ffffe1;
+  border-right-color: #fff8c2;
   top: 50%;
   right: 100%;
   margin-top: -8px;
