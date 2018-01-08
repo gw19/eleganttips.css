@@ -1,6 +1,6 @@
 # eleganttip.css&nbsp;&nbsp;[![GitHub release](https://img.shields.io/github/release/gw19/eleganttip.css.svg)](https://github.com/gw19/eleganttip.css/releases)&nbsp;[![license](https://img.shields.io/github/license/gw19/eleganttips.css.svg)]()
 Provide an elegant and configurable tips message block (tooltips) on your DOM element while mouse hover or focus on. (pure CSS)<br>
-Here is the <a href='https://storage.googleapis.com/eleganttips/index.html' target='_blank'>example page</a>.
+Here is the <a href='https://gw19.github.io/eleganttips.css/' target='_blank'>example page</a>.
 
 ![example_readme_title](docs/img/example_readme_title.png)
 
@@ -95,7 +95,7 @@ Now you can try to include all of the features you want inside your child elemen
 ```html
 <span class='et-left et-arrow et-style-night et-wide'>......</span>
 ```
-Here is the <a href='https://storage.googleapis.com/eleganttips/index.html' target='_blank'>example page</a>.
+Here is the <a href='https://gw19.github.io/eleganttips.css/' target='_blank'>example page</a>.
 ## Problems to be solved (future work)
 It seems that in Firefox 56+, while using `<button class='et'>...</button>` as a parent element, the mouse can NOT be hovered on the tips block which immediately disappeared when mouse leave `button`. It means that `pointer-event: auto` in CSS can not be used in Firefox with `<button>` as a parent elements, but can be in Chrome, so I used the `<span>` as parent elements in the example page.
 
